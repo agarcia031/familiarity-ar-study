@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.4.2/src/parser/GlobalConfigSchema.json",
+  "configsList": [
+    "_fam-study",
+    "_fam-study_G1",
+    "_fam-study_G2"
+  ],
+  "configs": {
+    "_fam-study": {
+      "path": "_fam-study/config.json"
+    },
+    "_fam-study_G1": {
+      "path": "_fam-study_G1/config.json"
+    },
+    "_fam-study_G2": {
+      "path": "_fam-study_G2/config.json"
+    }
+  }
+}

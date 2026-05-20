@@ -1,0 +1,493 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.4.2/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Familiarity study - Part 2 GroupA",
+    "version": "1",
+    "authors": [
+      "Leana"
+    ],
+    "date": "2025-12-02",
+    "description": "First Part",
+    "organizations": [
+      "inria"
+    ]
+  },
+  "uiConfig": {
+    "contactEmail": "",
+    "helpTextPath": "_fam-study_G2/assets/content/help.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "withSidebar": true,
+    "nextOnEnter": true,
+    "enumerateQuestions": true,
+    "studyEndMsg": "Thank you for completing the study. You may click this link and return to Prolific: [X](X)",
+    "urlParticipantIdParam": "PROLIFIC_PID"
+  },
+  "baseComponents": {
+    "icon-task": {
+      "type": "website",
+      "path": "_fam-study_G2/trial_test.html",
+      "instruction": "Look at the image and answer the questions.",
+      "forceCompletion": true,
+      "nextButtonLocation": "belowStimulus",
+      "parameters": {
+        "imageFile": "file",
+        "objectName": "value"
+      },
+      "response": [
+        {
+          "id": "completionSignal",
+          "type": "reactive",
+          "prompt": "Click on next to continue with another object",
+          "required": true,
+          "hidden": true
+        },
+        {
+          "id": "objectName",
+          "type": "reactive",
+          "required": false,
+          "hidden": true,
+          "prompt": "Object Name"
+        },
+        {
+          "id": "retrievalAnswer",
+          "type": "reactive",
+          "required": false,
+          "hidden": true,
+          "prompt": "Choose an answer"
+        },
+        {
+          "id": "confidence",
+          "type": "reactive",
+          "required": false,
+          "hidden": true,
+          "prompt": "Confidence"
+        }
+      ]
+    }
+  },
+  "components": {
+    "myAttentionCheckComponent": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "AttentionCheck1",
+          "prompt": "The colour test you are about to take part in is very simple, when asked for your favorite colour you must select 'Orange'. This is an attention check.\n\nBased on the text you read above what colour have you been asked to enter ?",
+          "required": true,
+          "type": "radio",
+          "options": [
+            "Blue",
+            "Yellow",
+            "Orange",
+            "Red",
+            "Green"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "AttentionCheck1",
+          "answer": "Orange"
+        }
+      ]
+    },
+    "IntroPage": {
+      "type": "markdown",
+      "path": "_fam-study_G2/assets/content/instructions.md",
+      "response": [
+        {
+          "id": "prolificId",
+          "prompt": "Your Prolific ID (automatically filled in)",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "shortText",
+          "placeholder": "Prolific ID",
+          "paramCapture": "PROLIFIC_PID"
+        }
+      ]
+    },
+    "ConsentPage": {
+      "type": "markdown",
+      "path": "_fam-study_G2/assets/content/consent.md",
+      "nextButtonText": "I agree",
+      "response": []
+    },
+    "trial1B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/screwdriver.png",
+        "objectName": "Screwdriver",
+        "source": "Virtual"
+      }
+    },
+    "trial2B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/lighter.png",
+        "objectName": "Lighter",
+        "source": "Virtual"
+      }
+    },
+    "trial3B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/sunglasses.png",
+        "objectName": "Sunglasses",
+        "source": "Virtual"
+      }
+    },
+    "trial4B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/pen.png",
+        "objectName": "Pen",
+        "source": "Real"
+      }
+    },
+    "trial5B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/cup.png",
+        "objectName": "Cup",
+        "source": "Real"
+      }
+    },
+    "trial6B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/hair-dryer.png",
+        "objectName": "Hair dryer",
+        "source": "Virtual"
+      }
+    },
+    "trial7B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/serving-spoon.png",
+        "objectName": "Serving spoon",
+        "source": "Real"
+      }
+    },
+    "trial8B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/box-cutter.png",
+        "objectName": "Box cutter",
+        "source": "Real"
+      }
+    },
+    "trial9B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/tin-can.png",
+        "objectName": "Tin can",
+        "source": "Real"
+      }
+    },
+    "trial10B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/paint-palette.png",
+        "objectName": "Paint palette",
+        "source": "Virtual"
+      }
+    },
+    "trial11B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/book.png",
+        "objectName": "Book",
+        "source": "Real"
+      }
+    },
+    "trial12B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/rubber-duck.png",
+        "objectName": "Rubber duck",
+        "source": "Real"
+      }
+    },
+    "trial13B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/candle.png",
+        "objectName": "Candle",
+        "source": "Virtual"
+      }
+    },
+    "trial14B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/calculator.png",
+        "objectName": "Calculator",
+        "source": "Virtual"
+      }
+    },
+    "trial15B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/hanger.png",
+        "objectName": "Hanger",
+        "source": "Virtual"
+      }
+    },
+    "trial16B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/clock.png",
+        "objectName": "Clock",
+        "source": "Virtual"
+      }
+    },
+    "trial17B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/scissors.png",
+        "objectName": "Scissors",
+        "source": "Virtual"
+      }
+    },
+    "trial18B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/usb-drive.png",
+        "objectName": "Usb drive",
+        "source": "Real"
+      }
+    },
+    "trial19B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/computer-mouse.png",
+        "objectName": "Computer mouse",
+        "source": "Virtual"
+      }
+    },
+    "trial20B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/toothbrush.png",
+        "objectName": "Toothbrush",
+        "source": "Real"
+      }
+    },
+    "trial21B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/banana.png",
+        "objectName": "Banana",
+        "source": "Real"
+      }
+    },
+    "trial22B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/lemon.png",
+        "objectName": "Lemon",
+        "source": "Virtual"
+      }
+    },
+    "trial23B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/keys.png",
+        "objectName": "Keys",
+        "source": "Real"
+      }
+    },
+    "trial24B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/apple.png",
+        "objectName": "Apple",
+        "source": "Real"
+      }
+    },
+    "trial25B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/pear.png",
+        "objectName": "Pear",
+        "source": ""
+      }
+    },
+    "trial26B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/potato.png",
+        "objectName": "Potato",
+        "source": ""
+      }
+    },
+    "trial27B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/spray-bottle.png",
+        "objectName": "Spray bottle",
+        "source": ""
+      }
+    },
+    "trial28B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/scotch-tape.png",
+        "objectName": "Scotch tape",
+        "source": ""
+      }
+    },
+    "trial29B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/tennis-ball.png",
+        "objectName": "Tennis ball",
+        "source": ""
+      }
+    },
+    "trial30B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/vase.png",
+        "objectName": "Vase",
+        "source": ""
+      }
+    },
+    "trial31B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/comb.png",
+        "objectName": "Comb",
+        "source": ""
+      }
+    },
+    "trial32B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/fan.png",
+        "objectName": "Fan",
+        "source": ""
+      }
+    },
+    "trial33B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/bottle-opener.png",
+        "objectName": "Bottle opener",
+        "source": ""
+      }
+    },
+    "trial34B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/grapes.png",
+        "objectName": "Grapes",
+        "source": ""
+      }
+    },
+    "trial35B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/hammer.png",
+        "objectName": "Hammer",
+        "source": ""
+      }
+    },
+    "trial36B": {
+      "baseComponent": "icon-task",
+      "parameters": {
+        "imageFile": "/_fam-study_G1/assets/icons/hat.png",
+        "objectName": "Hat",
+        "source": ""
+      }
+    },
+
+    "BlindSpotQuestionnaire": {
+      "type": "website",
+      "path": "_fam-study_G2/blindspot.html",
+      "response": [
+        {
+          "id": "personalExtent",
+          "type": "reactive",
+          "required": false,
+          "hidden": true,
+          "prompt": "Personal extent"
+        },
+        {
+          "id": "generalExtent",
+          "type": "reactive",
+          "required": false,
+          "hidden": true,
+          "prompt": "General extent"
+        },
+        {
+          "id": "explanation",
+          "type": "reactive",
+          "required": false,
+          "hidden": true,
+          "prompt": "Additional explanation"
+        },
+        {
+          "id": "completionSignal",
+          "type": "reactive",
+          "location": "sidebar",
+          "prompt": "Click on next to continue",
+          "required": true,
+          "hidden": true
+        }
+      ]
+    },
+    
+    "PostQuestionnaire": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "q1",
+          "prompt": "Did you experience any problems with our study? For example, did anything not render or display properly? Any other issues or anything you would like to tell us?",
+          "location": "belowStimulus",
+          "type": "longText",
+          "placeholder": "Enter your answer here.",
+          "required": true
+        }
+
+      ]
+    },
+  "EndPage": {
+    "type": "markdown",
+    "path": "_fam-study_G2/assets/content/end.md",
+    "response": []
+  }
+
+},
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "ConsentPage",
+      "IntroPage",
+      {
+        "order": "random",
+        "components": [
+          "trial1B", "trial2B", "trial3B", "trial4B",
+          "myAttentionCheckComponent",
+          "trial5B", "trial6B", "trial7B", "trial8B", "trial9B", "trial10B", "trial11B",
+          "myAttentionCheckComponent",
+          "trial12B", "trial13B", "trial14B", "trial15B", "trial16B", "trial17B", "trial18B", "trial19B", "trial20B", "trial21B", "trial22B", "trial23B", "trial24B",
+          "trial25B", "trial26B", "trial27B", "trial28B", "trial29B", "trial30B", "trial31B", "trial32B", "trial33B", "trial34B", "trial35B", "trial36B"
+        ],
+        "skip": [
+          {
+            "name": "myAttentionCheckComponent",
+            "check": "repeatedComponent",
+            "condition": "numIncorrect",
+            "value": 2,
+            "to": "end"
+          }
+        ]
+      },
+      "BlindSpotQuestionnaire",
+      "PostQuestionnaire",
+      "EndPage"
+    ]
+  }
+}
+
