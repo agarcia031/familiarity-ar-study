@@ -262,7 +262,7 @@
       "parameters": {
         "imageFile": "/_fam-study_G1/assets/icons/computer-mouse.png",
         "objectName": "Computer mouse",
-        "source": "Real"
+        "source": "Virtual"
       }
     },
     "trial20A": {
@@ -302,7 +302,7 @@
       "parameters": {
         "imageFile": "/_fam-study_G1/assets/icons/apple.png",
         "objectName": "Apple",
-        "source": "Virtual"
+        "source": "Real"
       }
     },
     "trial25A": {

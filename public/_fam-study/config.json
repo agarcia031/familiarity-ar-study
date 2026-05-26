@@ -1052,9 +1052,9 @@
     "trial11A": {
       "baseComponent": "video-task-template",
       "parameters": {
-        "videoFile": "apple_Overlay.mp4",
+        "videoFile": "apple_100.mp4",
         "correctObjectName": "Apple",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Real"
       }
     },
     "trial12A": {
@@ -1100,9 +1100,9 @@
     "trial17A": {
       "baseComponent": "video-task-template",
       "parameters": {
-        "videoFile": "computer-mouse_100.mp4",
+        "videoFile": "computer-mouse_Overlay.mp4",
         "correctObjectName": "Computer mouse",
-        "correctSourceName": "Real"
+        "correctSourceName": "Virtual"
       }
     },
     "trial18A": {
@@ -1244,9 +1244,9 @@
     "trial11B": {
       "baseComponent": "video-task-template",
       "parameters": {
-        "videoFile": "apple_100.mp4",
+        "videoFile": "apple_Overlay.mp4",
         "correctObjectName": "Apple",
-        "correctSourceName": "Real"
+        "correctSourceName": "Virtual"
       }
     },
     "trial12B": {
@@ -1292,9 +1292,9 @@
     "trial17B": {
       "baseComponent": "video-task-template",
       "parameters": {
-        "videoFile": "computer-mouse_Overlay.mp4",
+        "videoFile": "computer-mouse_100.mp4",
         "correctObjectName": "Computer mouse",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Real"
       }
     },
     "trial18B": {
