@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blind Spot Questionnaire</title>
-    <script src="../revisitUtilities/revisit-communicate.js"></script>
+    <script src="revisitUtilities/revisit-communicate.js"></script>
 
     <style>
         /* --- 1. GLOBAL STYLES --- */
@@ -124,7 +124,7 @@
 <div class="instruction">
     <h2>Questionnaire</h2>
     <p>Read the following assertion and answer the two questions carefully:</p>
-    <div class="assertion">"Greater familiarity with new technologies increases individuals' confidence in their ability to distinguish between memories of real and virtual objects"</div>
+    <div class="assertion">“The more familiar an individual is with new technologies, the more likely they are to overestimate their ability to correctly identify the origin of their memories.“</div>
 </div>
 
 <div id="stage-personal" class="question-container">
@@ -177,6 +177,35 @@
 </div>
 
 <script>
+    let questionnaireFinished = false;
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key !== 'Enter') return;
+
+        if (questionnaireFinished) {
+            window.parent.document.dispatchEvent(
+                new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })
+            );
+            return;
+        }
+
+        // Stage 1 — personal
+        const btn1 = document.getElementById('btn-next-1');
+        if (!btn1.disabled && !btn1.classList.contains('hidden')) {
+            submitPersonal();
+            return;
+        }
+
+        // Stage 2 — general
+        const btn2 = document.getElementById('btn-next-2');
+        if (!btn2.disabled && !btn2.classList.contains('hidden')) {
+            submitGeneral();
+            return;
+        }
+
+        // Stage 3 — explanation: skip Enter entirely (textarea)
+    });
+    
     let questionnaireAnswers = {
         personalExtent: null,
         generalExtent: null,
@@ -216,6 +245,7 @@
     }
 
     function saveAndFinish() {
+        questionnaireFinished = true;
         lockSection('stage-explanation');
         if (typeof Revisit !== 'undefined') {
             Revisit.postAnswers({ ...questionnaireAnswers, completionSignal: "Finished" });

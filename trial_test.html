@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Source Memory Task (Part 2)</title>
-    <script src="../revisitUtilities/revisit-communicate.js"></script>
+    <script src="revisitUtilities/revisit-communicate.js"></script>
 
     <style>
         /* --- 1. GLOBAL STYLES --- */
@@ -161,13 +161,40 @@
     </div>
 </div>
 
-
 <div id="final-message" class="question-container hidden" style="border-left: 5px solid #28a745; background-color: #d4edda;">
     <h3 style="color: #155724;">Trial finished</h3>
     <p>Please click <strong>Next</strong> in the study interface to continue.</p>
 </div>
 
 <script>
+    let trialFinished = false;
+    document.addEventListener('keydown', function(e) {
+        if (e.key !== 'Enter') return;
+
+        if (trialFinished) {
+            // Forward Enter to reVISit parent to trigger its Next button
+            window.parent.document.dispatchEvent(
+                new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })
+            );
+            return;
+        }
+
+        // Stage 1 — retrieval
+        const btn1 = document.getElementById('btn-next-1');
+        if (!btn1.disabled && !btn1.classList.contains('hidden')) {
+            submitRetrieval();
+            return;
+        }
+
+        // Stage 2 — confidence
+        const btn2 = document.getElementById('btn-next-2');
+        if (!btn2.disabled && !btn2.classList.contains('hidden')) {
+            submitConfidence();
+            return;
+        }
+    });
+
+
     let trialAnswers = {
         objectName: "",
         retrievalAnswer: null,
@@ -213,6 +240,12 @@
     }
 
     function saveAndFinish() {
+        trialFinished = true;
+        
+        // Hide the confidence stage entirely
+        document.getElementById('stage-confidence').classList.add('hidden');
+        
+        // Post answers to reVISit → unlocks the outside Next button
         trialAnswers.completionSignal = "Finished";
         console.log('Trial finish posting answers', trialAnswers);
         if (typeof Revisit !== 'undefined') {

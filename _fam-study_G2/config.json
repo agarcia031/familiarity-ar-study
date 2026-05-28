@@ -4,7 +4,7 @@
     "title": "Familiarity study - Part 2 GroupA",
     "version": "1",
     "authors": [
-      "Leana"
+      "Amandine"
     ],
     "date": "2025-12-02",
     "description": "First Part",
@@ -14,7 +14,7 @@
   },
   "uiConfig": {
     "contactEmail": "",
-    "helpTextPath": "_fam-study_G2/assets/content/help.md",
+    "helpTextPath": "assets/content/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
@@ -27,7 +27,7 @@
   "baseComponents": {
     "icon-task": {
       "type": "website",
-      "path": "_fam-study_G2/trial_test.html",
+      "path": "trial_test.html",
       "instruction": "Look at the image and answer the questions.",
       "forceCompletion": true,
       "nextButtonLocation": "belowStimulus",
@@ -92,9 +92,15 @@
         }
       ]
     },
+    "ConsentPage": {
+      "type": "markdown",
+      "path": "assets/content/consent.md",
+      "nextButtonText": "I agree",
+      "response": []
+    },
     "IntroPage": {
       "type": "markdown",
-      "path": "_fam-study_G2/assets/content/instructions.md",
+      "path": "assets/content/instructions.md",
       "response": [
         {
           "id": "prolificId",
@@ -107,16 +113,40 @@
         }
       ]
     },
-    "ConsentPage": {
-      "type": "markdown",
-      "path": "_fam-study_G2/assets/content/consent.md",
-      "nextButtonText": "I agree",
-      "response": []
+    "PreTrialEstimation": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "estimationRecognition",
+          "prompt": "In your opinion, how many of the 24 objects you saw in Part 1 do you think you could identify if given their name?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "numerical",
+          "min": 0,
+          "max": 24,
+          "placeholder": "Select a number between 0 and 24"
+        },
+        {
+          "id": "estimationSource",
+          "prompt": "Among the objects you think you will remember, can you estimate the ratio for which you could correctly identify the source — real or virtual — of the object?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "slider",
+          "startingValue": 0,
+          "options": [
+            { "label": "0%", "value": 0 },
+            { "label": "25%", "value": 25 },
+            { "label": "50%", "value": 50 },
+            { "label": "75%", "value": 75 },
+            { "label": "100%", "value": 100 }
+          ]
+        }
+      ]
     },
     "trial1B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/screwdriver.png",
+        "imageFile": "assets/icons/screwdriver.png",
         "objectName": "Screwdriver",
         "source": "Virtual"
       }
@@ -124,7 +154,7 @@
     "trial2B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/lighter.png",
+        "imageFile": "assets/icons/lighter.png",
         "objectName": "Lighter",
         "source": "Virtual"
       }
@@ -132,7 +162,7 @@
     "trial3B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/sunglasses.png",
+        "imageFile": "assets/icons/sunglasses.png",
         "objectName": "Sunglasses",
         "source": "Virtual"
       }
@@ -140,7 +170,7 @@
     "trial4B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/pen.png",
+        "imageFile": "assets/icons/pen.png",
         "objectName": "Pen",
         "source": "Real"
       }
@@ -148,7 +178,7 @@
     "trial5B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/cup.png",
+        "imageFile": "assets/icons/cup.png",
         "objectName": "Cup",
         "source": "Real"
       }
@@ -156,7 +186,7 @@
     "trial6B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/hair-dryer.png",
+        "imageFile": "assets/icons/hair-dryer.png",
         "objectName": "Hair dryer",
         "source": "Virtual"
       }
@@ -164,7 +194,7 @@
     "trial7B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/serving-spoon.png",
+        "imageFile": "assets/icons/serving-spoon.png",
         "objectName": "Serving spoon",
         "source": "Real"
       }
@@ -172,7 +202,7 @@
     "trial8B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/box-cutter.png",
+        "imageFile": "assets/icons/box-cutter.png",
         "objectName": "Box cutter",
         "source": "Real"
       }
@@ -180,7 +210,7 @@
     "trial9B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/tin-can.png",
+        "imageFile": "assets/icons/tin-can.png",
         "objectName": "Tin can",
         "source": "Real"
       }
@@ -188,7 +218,7 @@
     "trial10B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/paint-palette.png",
+        "imageFile": "assets/icons/paint-palette.png",
         "objectName": "Paint palette",
         "source": "Virtual"
       }
@@ -196,7 +226,7 @@
     "trial11B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/book.png",
+        "imageFile": "assets/icons/book.png",
         "objectName": "Book",
         "source": "Real"
       }
@@ -204,7 +234,7 @@
     "trial12B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/rubber-duck.png",
+        "imageFile": "assets/icons/rubber-duck.png",
         "objectName": "Rubber duck",
         "source": "Real"
       }
@@ -212,7 +242,7 @@
     "trial13B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/candle.png",
+        "imageFile": "assets/icons/candle.png",
         "objectName": "Candle",
         "source": "Virtual"
       }
@@ -220,7 +250,7 @@
     "trial14B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/calculator.png",
+        "imageFile": "assets/icons/calculator.png",
         "objectName": "Calculator",
         "source": "Virtual"
       }
@@ -228,7 +258,7 @@
     "trial15B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/hanger.png",
+        "imageFile": "assets/icons/hanger.png",
         "objectName": "Hanger",
         "source": "Virtual"
       }
@@ -236,7 +266,7 @@
     "trial16B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/clock.png",
+        "imageFile": "assets/icons/clock.png",
         "objectName": "Clock",
         "source": "Virtual"
       }
@@ -244,7 +274,7 @@
     "trial17B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/scissors.png",
+        "imageFile": "assets/icons/scissors.png",
         "objectName": "Scissors",
         "source": "Virtual"
       }
@@ -252,7 +282,7 @@
     "trial18B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/usb-drive.png",
+        "imageFile": "assets/icons/usb-drive.png",
         "objectName": "Usb drive",
         "source": "Real"
       }
@@ -260,7 +290,7 @@
     "trial19B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/computer-mouse.png",
+        "imageFile": "assets/icons/computer-mouse.png",
         "objectName": "Computer mouse",
         "source": "Real"
       }
@@ -268,7 +298,7 @@
     "trial20B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/toothbrush.png",
+        "imageFile": "assets/icons/toothbrush.png",
         "objectName": "Toothbrush",
         "source": "Real"
       }
@@ -276,7 +306,7 @@
     "trial21B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/banana.png",
+        "imageFile": "assets/icons/banana.png",
         "objectName": "Banana",
         "source": "Real"
       }
@@ -284,7 +314,7 @@
     "trial22B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/lemon.png",
+        "imageFile": "assets/icons/lemon.png",
         "objectName": "Lemon",
         "source": "Virtual"
       }
@@ -292,7 +322,7 @@
     "trial23B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/keys.png",
+        "imageFile": "assets/icons/keys.png",
         "objectName": "Keys",
         "source": "Real"
       }
@@ -300,7 +330,7 @@
     "trial24B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/apple.png",
+        "imageFile": "assets/icons/apple.png",
         "objectName": "Apple",
         "source": "Virtual"
       }
@@ -308,7 +338,7 @@
     "trial25B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/pear.png",
+        "imageFile": "assets/icons/pear.png",
         "objectName": "Pear",
         "source": ""
       }
@@ -316,7 +346,7 @@
     "trial26B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/potato.png",
+        "imageFile": "assets/icons/potato.png",
         "objectName": "Potato",
         "source": ""
       }
@@ -324,7 +354,7 @@
     "trial27B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/spray-bottle.png",
+        "imageFile": "assets/icons/spray-bottle.png",
         "objectName": "Spray bottle",
         "source": ""
       }
@@ -332,7 +362,7 @@
     "trial28B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/scotch-tape.png",
+        "imageFile": "assets/icons/scotch-tape.png",
         "objectName": "Scotch tape",
         "source": ""
       }
@@ -340,7 +370,7 @@
     "trial29B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/tennis-ball.png",
+        "imageFile": "assets/icons/tennis-ball.png",
         "objectName": "Tennis ball",
         "source": ""
       }
@@ -348,7 +378,7 @@
     "trial30B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/vase.png",
+        "imageFile": "assets/icons/vase.png",
         "objectName": "Vase",
         "source": ""
       }
@@ -356,7 +386,7 @@
     "trial31B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/comb.png",
+        "imageFile": "assets/icons/comb.png",
         "objectName": "Comb",
         "source": ""
       }
@@ -364,7 +394,7 @@
     "trial32B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/fan.png",
+        "imageFile": "assets/icons/fan.png",
         "objectName": "Fan",
         "source": ""
       }
@@ -372,7 +402,7 @@
     "trial33B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/bottle-opener.png",
+        "imageFile": "assets/icons/bottle-opener.png",
         "objectName": "Bottle opener",
         "source": ""
       }
@@ -380,7 +410,7 @@
     "trial34B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/grapes.png",
+        "imageFile": "assets/icons/grapes.png",
         "objectName": "Grapes",
         "source": ""
       }
@@ -388,7 +418,7 @@
     "trial35B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/hammer.png",
+        "imageFile": "assets/icons/hammer.png",
         "objectName": "Hammer",
         "source": ""
       }
@@ -396,7 +426,7 @@
     "trial36B": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/hat.png",
+        "imageFile": "assets/icons/hat.png",
         "objectName": "Hat",
         "source": ""
       }
@@ -404,7 +434,7 @@
 
     "BlindSpotQuestionnaire": {
       "type": "website",
-      "path": "_fam-study_G2/blindspot.html",
+      "path": "blindspot.html",
       "response": [
         {
           "id": "personalExtent",
@@ -454,7 +484,7 @@
     },
   "EndPage": {
     "type": "markdown",
-    "path": "_fam-study_G2/assets/content/end.md",
+    "path": "assets/content/end.md",
     "response": []
   }
 
@@ -464,6 +494,7 @@
     "components": [
       "ConsentPage",
       "IntroPage",
+      "PreTrialEstimation",
       {
         "order": "random",
         "components": [
