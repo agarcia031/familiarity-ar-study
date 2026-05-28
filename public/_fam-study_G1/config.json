@@ -14,7 +14,7 @@
   },
   "uiConfig": {
     "contactEmail": "",
-    "helpTextPath": "_fam-study_G1/assets/content/help.md",
+    "helpTextPath": "assets/content/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
@@ -94,7 +94,7 @@
     },
     "IntroPage": {
       "type": "markdown",
-      "path": "_fam-study_G1/assets/content/instructions.md",
+      "path": "assets/content/instructions.md",
       "response": [
         {
           "id": "prolificId",
@@ -109,14 +109,14 @@
     },
     "ConsentPage": {
       "type": "markdown",
-      "path": "_fam-study_G1/assets/content/consent.md",
+      "path": "assets_part2/content/consent.md",
       "nextButtonText": "I agree",
       "response": []
     },
     "trial1A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/screwdriver.png",
+        "imageFile": "assets/icons/screwdriver.png",
         "objectName": "Screwdriver",
         "source": "Real"
       }
@@ -124,7 +124,7 @@
     "trial2A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/lighter.png",
+        "imageFile": "assets/icons/lighter.png",
         "objectName": "Lighter",
         "source": "Real"
       }
@@ -132,7 +132,7 @@
     "trial3A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/sunglasses.png",
+        "imageFile": "assets/icons/sunglasses.png",
         "objectName": "Sunglasses",
         "source": "Real"
       }
@@ -140,7 +140,7 @@
     "trial4A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/pen.png",
+        "imageFile": "assets/icons/pen.png",
         "objectName": "Pen",
         "source": "Virtual"
       }
@@ -148,7 +148,7 @@
     "trial5A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/cup.png",
+        "imageFile": "assets/icons/cup.png",
         "objectName": "Cup",
         "source": "Virtual"
       }
@@ -156,7 +156,7 @@
     "trial6A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/hair-dryer.png",
+        "imageFile": "assets/icons/hair-dryer.png",
         "objectName": "Hair dryer",
         "source": "Real"
       }
@@ -164,7 +164,7 @@
     "trial7A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/serving-spoon.png",
+        "imageFile": "assets/icons/serving-spoon.png",
         "objectName": "Serving spoon",
         "source": "Virtual"
       }
@@ -172,7 +172,7 @@
     "trial8A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/box-cutter.png",
+        "imageFile": "assets/icons/box-cutter.png",
         "objectName": "Box cutter",
         "source": "Virtual"
       }
@@ -180,7 +180,7 @@
     "trial9A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/tin-can.png",
+        "imageFile": "assets/icons/tin-can.png",
         "objectName": "Tin can",
         "source": "Virtual"
       }
@@ -188,7 +188,7 @@
     "trial10A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/paint-palette.png",
+        "imageFile": "assets/icons/paint-palette.png",
         "objectName": "Paint palette",
         "source": "Real"
       }
@@ -196,7 +196,7 @@
     "trial11A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/book.png",
+        "imageFile": "assets/icons/book.png",
         "objectName": "Book",
         "source": "Virtual"
       }
@@ -204,7 +204,7 @@
     "trial12A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/rubber-duck.png",
+        "imageFile": "assets/icons/rubber-duck.png",
         "objectName": "Rubber duck",
         "source": "Virtual"
       }
@@ -212,7 +212,7 @@
     "trial13A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/candle.png",
+        "imageFile": "assets/icons/candle.png",
         "objectName": "Candle",
         "source": "Real"
       }
@@ -220,7 +220,7 @@
     "trial14A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/calculator.png",
+        "imageFile": "assets/icons/calculator.png",
         "objectName": "Calculator",
         "source": "Real"
       }
@@ -228,7 +228,7 @@
     "trial15A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/hanger.png",
+        "imageFile": "assets/icons/hanger.png",
         "objectName": "Hanger",
         "source": "Real"
       }
@@ -236,7 +236,7 @@
     "trial16A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/clock.png",
+        "imageFile": "assets/icons/clock.png",
         "objectName": "Clock",
         "source": "Real"
       }
@@ -244,7 +244,7 @@
     "trial17A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/scissors.png",
+        "imageFile": "assets/icons/scissors.png",
         "objectName": "Scissors",
         "source": "Real"
       }
@@ -252,7 +252,7 @@
     "trial18A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/usb-drive.png",
+        "imageFile": "assets/icons/usb-drive.png",
         "objectName": "Usb drive",
         "source": "Virtual"
       }
@@ -260,7 +260,7 @@
     "trial19A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/computer-mouse.png",
+        "imageFile": "assets/icons/computer-mouse.png",
         "objectName": "Computer mouse",
         "source": "Virtual"
       }
@@ -268,7 +268,7 @@
     "trial20A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/toothbrush.png",
+        "imageFile": "assets/icons/toothbrush.png",
         "objectName": "Toothbrush",
         "source": "Virtual"
       }
@@ -276,7 +276,7 @@
     "trial21A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/banana.png",
+        "imageFile": "assets/icons/banana.png",
         "objectName": "Banana",
         "source": "Virtual"
       }
@@ -284,7 +284,7 @@
     "trial22A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/lemon.png",
+        "imageFile": "assets/icons/lemon.png",
         "objectName": "Lemon",
         "source": "Real"
       }
@@ -292,7 +292,7 @@
     "trial23A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/keys.png",
+        "imageFile": "assets/icons/keys.png",
         "objectName": "Keys",
         "source": "Virtual"
       }
@@ -300,7 +300,7 @@
     "trial24A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/apple.png",
+        "imageFile": "assets/icons/apple.png",
         "objectName": "Apple",
         "source": "Real"
       }
@@ -308,7 +308,7 @@
     "trial25A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/pear.png",
+        "imageFile": "assets/icons/pear.png",
         "objectName": "Pear",
         "source": ""
       }
@@ -316,7 +316,7 @@
     "trial26A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/potato.png",
+        "imageFile": "assets/icons/potato.png",
         "objectName": "Potato",
         "source": ""
       }
@@ -324,7 +324,7 @@
     "trial27A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/spray-bottle.png",
+        "imageFile": "assets/icons/spray-bottle.png",
         "objectName": "Spray bottle",
         "source": ""
       }
@@ -332,7 +332,7 @@
     "trial28A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/scotch-tape.png",
+        "imageFile": "assets/icons/scotch-tape.png",
         "objectName": "Scotch tape",
         "source": ""
       }
@@ -340,7 +340,7 @@
     "trial29A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/tennis-ball.png",
+        "imageFile": "assets/icons/tennis-ball.png",
         "objectName": "Tennis ball",
         "source": ""
       }
@@ -348,7 +348,7 @@
     "trial30A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/vase.png",
+        "imageFile": "assets/icons/vase.png",
         "objectName": "Vase",
         "source": ""
       }
@@ -356,7 +356,7 @@
     "trial31A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/comb.png",
+        "imageFile": "assets/icons/comb.png",
         "objectName": "Comb",
         "source": ""
       }
@@ -364,7 +364,7 @@
     "trial32A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/fan.png",
+        "imageFile": "assets/icons/fan.png",
         "objectName": "Fan",
         "source": ""
       }
@@ -372,7 +372,7 @@
     "trial33A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/bottle-opener.png",
+        "imageFile": "assets/icons/bottle-opener.png",
         "objectName": "Bottle opener",
         "source": ""
       }
@@ -380,7 +380,7 @@
     "trial34A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/grapes.png",
+        "imageFile": "assets/icons/grapes.png",
         "objectName": "Grapes",
         "source": ""
       }
@@ -388,7 +388,7 @@
     "trial35A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/hammer.png",
+        "imageFile": "assets/icons/hammer.png",
         "objectName": "Hammer",
         "source": ""
       }
@@ -396,7 +396,7 @@
     "trial36A": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "/_fam-study_G1/assets/icons/hat.png",
+        "imageFile": "assets/icons/hat.png",
         "objectName": "Hat",
         "source": ""
       }
@@ -454,7 +454,7 @@
     },
   "EndPage": {
     "type": "markdown",
-    "path": "_fam-study_G1/assets/content/end.md",
+    "path": "assets/content/end.md",
     "response": []
   }
 
