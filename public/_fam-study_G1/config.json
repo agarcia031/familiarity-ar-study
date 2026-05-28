@@ -4,7 +4,7 @@
     "title": "Familiarity study - Part 2 GroupA",
     "version": "1",
     "authors": [
-      "Leana"
+      "Amandine"
     ],
     "date": "2025-12-02",
     "description": "First Part",
@@ -27,7 +27,7 @@
   "baseComponents": {
     "icon-task": {
       "type": "website",
-      "path": "_fam-study_G1/trial_test.html",
+      "path": "trial_test.html",
       "instruction": "Look at the image and answer the questions.",
       "forceCompletion": true,
       "nextButtonLocation": "belowStimulus",
@@ -92,6 +92,12 @@
         }
       ]
     },
+    "ConsentPage": {
+      "type": "markdown",
+      "path": "assets/content/consent.md",
+      "nextButtonText": "I agree",
+      "response": []
+    },
     "IntroPage": {
       "type": "markdown",
       "path": "assets/content/instructions.md",
@@ -107,11 +113,35 @@
         }
       ]
     },
-    "ConsentPage": {
-      "type": "markdown",
-      "path": "assets_part2/content/consent.md",
-      "nextButtonText": "I agree",
-      "response": []
+    "PreTrialEstimation": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "estimationRecognition",
+          "prompt": "In your opinion, how many of the 24 objects you saw in Part 1 do you think you could identify if given their name?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "numerical",
+          "min": 0,
+          "max": 24,
+          "placeholder": "Select a number between 0 and 24"
+        },
+        {
+          "id": "estimationSource",
+          "prompt": "Among the objects you think you will remember, can you estimate the ratio for which you could correctly identify the source — real or virtual — of the object?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "slider",
+          "startingValue": 0,
+          "options": [
+            { "label": "0%", "value": 0 },
+            { "label": "25%", "value": 25 },
+            { "label": "50%", "value": 50 },
+            { "label": "75%", "value": 75 },
+            { "label": "100%", "value": 100 }
+          ]
+        }
+      ]
     },
     "trial1A": {
       "baseComponent": "icon-task",
@@ -404,7 +434,7 @@
 
     "BlindSpotQuestionnaire": {
       "type": "website",
-      "path": "_fam-study_G1/blindspot.html",
+      "path": "blindspot.html",
       "response": [
         {
           "id": "personalExtent",
@@ -464,6 +494,7 @@
     "components": [
       "ConsentPage",
       "IntroPage",
+      "PreTrialEstimation",
       {
         "order": "random",
         "components": [
