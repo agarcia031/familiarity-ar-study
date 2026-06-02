@@ -27,7 +27,7 @@
   "baseComponents": {
     "icon-task": {
       "type": "website",
-      "path": "trial_test.html",
+      "path": "_fam-study_part2/trial_test.html",
       "instruction": "Look at the image and answer the questions.",
       "forceCompletion": true,
       "nextButtonLocation": "belowStimulus",
@@ -362,7 +362,7 @@
 
     "BlindSpotQuestionnaire": {
       "type": "website",
-      "path": "blindspot.html",
+      "path": "_fam-study_part2/blindspot.html",
       "response": [
         {
           "id": "personalExtent",
