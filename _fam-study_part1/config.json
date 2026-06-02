@@ -4,7 +4,7 @@
     "title": "Familiarity study - Part 1",
     "version": "1",
     "authors": [
-      "Leana"
+      "Leana, Amandine"
     ],
     "date": "2025-12-02",
     "description": "First Part",
@@ -969,7 +969,7 @@
         }
       ]
     },
-    "trial1A": {
+    "trial1": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "hanger_100.mp4",
@@ -977,7 +977,7 @@
         "correctSourceName": "Real"
       }
     },
-    "trial2A": {
+    "trial2": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "paint-palette_100.mp4",
@@ -985,7 +985,7 @@
         "correctSourceName": "Real"
       }
     },
-    "trial3A": {
+    "trial3": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "scissors_100.mp4",
@@ -993,7 +993,7 @@
         "correctSourceName": "Real"
       }
     },
-    "trial4A": {
+    "trial4": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "keys_Overlay.mp4",
@@ -1001,7 +1001,7 @@
         "correctSourceName": "Virtual"
       }
     },
-    "trial5A": {
+    "trial5": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "rubber-duck_Overlay.mp4",
@@ -1009,7 +1009,7 @@
         "correctSourceName": "Virtual"
       }
     },
-    "trial6A": {
+    "trial6": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "box-cutter_Overlay.mp4",
@@ -1017,7 +1017,7 @@
         "correctSourceName": "Virtual"
       }
     },
-    "trial7A": {
+    "trial7": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "sunglasses_100.mp4",
@@ -1025,15 +1025,7 @@
         "correctSourceName": "Real"
       }
     },
-    "trial8A": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "candle_100.mp4",
-        "correctObjectName": "Candle",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial9A": {
+    "trial8": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "pen_Overlay.mp4",
@@ -1041,7 +1033,7 @@
         "correctSourceName": "Virtual"
       }
     },
-    "trial10A": {
+    "trial9": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "screwdriver_100.mp4",
@@ -1049,7 +1041,7 @@
         "correctSourceName": "Real"
       }
     },
-    "trial11A": {
+    "trial10": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "apple_100.mp4",
@@ -1057,7 +1049,7 @@
         "correctSourceName": "Real"
       }
     },
-    "trial12A": {
+    "trial11": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "banana_Overlay.mp4",
@@ -1065,31 +1057,7 @@
         "correctSourceName": "Virtual"
       }
     },
-    "trial13A": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "lighter_100.mp4",
-        "correctObjectName": "Lighter",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial14A": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "toothbrush_Overlay.mp4",
-        "correctObjectName": "Toothbrush",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial15A": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "calculator_100.mp4",
-        "correctObjectName": "Calculator",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial16A": {
+    "trial12": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "clock_100.mp4",
@@ -1097,7 +1065,7 @@
         "correctSourceName": "Real"
       }
     },
-    "trial17A": {
+    "trial13": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "computer-mouse_Overlay.mp4",
@@ -1105,7 +1073,7 @@
         "correctSourceName": "Virtual"
       }
     },
-    "trial18A": {
+    "trial14": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "lemon_100.mp4",
@@ -1113,7 +1081,7 @@
         "correctSourceName": "Real"
       }
     },
-    "trial19A": {
+    "trial15": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "usb-drive_Overlay.mp4",
@@ -1121,15 +1089,7 @@
         "correctSourceName": "Virtual"
       }
     },
-    "trial20A": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "tin-can_Overlay.mp4",
-        "correctObjectName": "Tin can",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial21A": {
+    "trial16": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "cup_Overlay.mp4",
@@ -1137,7 +1097,7 @@
         "correctSourceName": "Virtual"
       }
     },
-    "trial22A": {
+    "trial17": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "serving-spoon_Overlay.mp4",
@@ -1145,15 +1105,7 @@
         "correctSourceName": "Virtual"
       }
     },
-    "trial23A": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "book_Overlay.mp4",
-        "correctObjectName": "Book",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial24A": {
+    "trial18": {
       "baseComponent": "video-task-template",
       "parameters": {
         "videoFile": "hairdryer_100.mp4",
@@ -1161,221 +1113,9 @@
         "correctSourceName": "Real"
       }
     },
-    "trial1B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "hanger_Overlay.mp4",
-        "correctObjectName": "Hanger",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial2B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "paint-palette_Overlay.mp4",
-        "correctObjectName": "Paint palette",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial3B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "scissors_Overlay.mp4",
-        "correctObjectName": "Scissors",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial4B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "keys_100.mp4",
-        "correctObjectName": "Keys",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial5B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "rubber-duck_100.mp4",
-        "correctObjectName": "Rubber duck",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial6B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "box-cutter_100.mp4",
-        "correctObjectName": "Box cutter",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial7B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "sunglasses_Overlay.mp4",
-        "correctObjectName": "Sunglasses",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial8B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "candle_Overlay.mp4",
-        "correctObjectName": "Candle",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial9B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "pen_100.mp4",
-        "correctObjectName": "Pen",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial10B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "screwdriver_Overlay.mp4",
-        "correctObjectName": "Screwdriver",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial11B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "apple_Overlay.mp4",
-        "correctObjectName": "Apple",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial12B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "banana_100.mp4",
-        "correctObjectName": "Banana",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial13B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "lighter_Overlay.mp4",
-        "correctObjectName": "Lighter",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial14B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "toothbrush_100.mp4",
-        "correctObjectName": "Toothbrush",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial15B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "calculator_Overlay.mp4",
-        "correctObjectName": "Calculator",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial16B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "clock_Overlay.mp4",
-        "correctObjectName": "Clock",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial17B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "computer-mouse_100.mp4",
-        "correctObjectName": "Computer mouse",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial18B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "lemon_Overlay.mp4",
-        "correctObjectName": "Lemon",
-        "correctSourceName": "Virtual"
-      }
-    },
-    "trial19B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "usb-drive_100.mp4",
-        "correctObjectName": "Usb drive",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial20B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "tin-can_100.mp4",
-        "correctObjectName": "Tin can",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial21B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "cup_100.mp4",
-        "correctObjectName": "Cup",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial22B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "serving-spoon_100.mp4",
-        "correctObjectName": "Serving spoon",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial23B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "book_100.mp4",
-        "correctObjectName": "Book",
-        "correctSourceName": "Real"
-      }
-    },
-    "trial24B": {
-      "baseComponent": "video-task-template",
-      "parameters": {
-        "videoFile": "hairdryer_Overlay.mp4",
-        "correctObjectName": "Hair dryer",
-        "correctSourceName": "Virtual"
-      }
-    },
     "Doubt": {
       "type": "questionnaire",
       "response": [
-        {
-          "id": "attentionQ",
-          "prompt": "On average, how focused were you on the videos?",
-          "location": "belowStimulus",
-          "type": "slider",
-          "options": [
-            {
-              "label": "Very distracted",
-              "value": 0
-            },
-            {
-              "label": "Somewhat focused",
-              "value": 50
-            },
-            {
-              "label": "Extremely focused",
-              "value": 100
-            }
-          ]
-        },
         {
           "id": "doubtQ1",
           "prompt": "Did you have any doubts about the purpose of the study ?",
@@ -1468,89 +1208,36 @@
       },
       "IntroPageWatchingTask",
       {
-        "id": "group-assignment",
-        "order": "latinSquare",
-        "numSamples": 1,
+        "id": "mainTask",
+        "order": "fixed",
         "components": [
+          "trial1",
+          "trial2",
+          "trial3",
+          "trial4",
+          "trial5",
+          "trial6",
+          "trial7",
+          "trial8",
+          "trial9",
+          "trial10",
+          "trial11",
+          "myAttentionCheckComponent",
+          "trial12",
+          "trial13",
+          "trial14",
+          "trial15",
+          "trial16",
+          "trial17",
+          "trial18"
+        ],
+        "skip": [
           {
-            "id": "groupA",
-            "order": "fixed",
-            "components": [
-              "trial1A",
-              "trial2A",
-              "trial3A",
-              "trial4A",
-              "trial5A",
-              "trial6A",
-              "trial7A",
-              "trial8A",
-              "trial9A",
-              "trial10A",
-              "trial11A",
-              "myAttentionCheckComponent",
-              "trial12A",
-              "trial13A",
-              "trial14A",
-              "trial15A",
-              "trial16A",
-              "trial17A",
-              "trial18A",
-              "trial19A",
-              "trial20A",
-              "trial21A",
-              "trial22A",
-              "trial23A",
-              "trial24A"
-            ],
-            "skip": [
-              {
-                "name": "myAttentionCheckComponent",
-                "check": "repeatedComponent",
-                "condition": "numIncorrect",
-                "value": 2,
-                "to": "end"
-              }
-            ]
-          },
-          {
-            "id": "groupB",
-            "order": "fixed",
-            "components": [
-              "trial1B",
-              "trial2B",
-              "trial3B",
-              "trial4B",
-              "trial5B",
-              "trial6B",
-              "trial7B",
-              "trial8B",
-              "trial9B",
-              "trial10B",
-              "trial11B",
-              "myAttentionCheckComponent",
-              "trial12B",
-              "trial13B",
-              "trial14B",
-              "trial15B",
-              "trial16B",
-              "trial17B",
-              "trial18B",
-              "trial19B",
-              "trial20B",
-              "trial21B",
-              "trial22B",
-              "trial23B",
-              "trial24B"
-            ],
-            "skip": [
-              {
-                "name": "myAttentionCheckComponent",
-                "check": "repeatedComponent",
-                "condition": "numIncorrect",
-                "value": 2,
-                "to": "end"
-              }
-            ]
+            "name": "myAttentionCheckComponent",
+            "check": "repeatedComponent",
+            "condition": "numIncorrect",
+            "value": 2,
+            "to": "end"
           }
         ]
       },

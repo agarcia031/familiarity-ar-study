@@ -6,14 +6,11 @@
     "_fam-study_G2"
   ],
   "configs": {
-    "_fam-study": {
+    "_fam-study_part1": {
       "path": "_fam-study/config.json"
     },
-    "_fam-study_G1": {
-      "path": "_fam-study_G1/config.json"
-    },
-    "_fam-study_G2": {
-      "path": "_fam-study_G2/config.json"
+    "_fam-study_part2": {
+      "path": "_fam-study_part2/config.json"
     }
   }
 }
