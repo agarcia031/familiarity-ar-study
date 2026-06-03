@@ -59,6 +59,7 @@
     },
     "overclaiming-question-template": {
       "type": "questionnaire",
+      "instruction": "Answer spontaneously, based on what you already know.",
       "nextButtonLocation": "aboveStimulus",
       "response": []
     }
@@ -979,7 +980,8 @@
       "parameters": {
         "videoFile": "hanger_100.mp4",
         "correctObjectName": "Hanger",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 1
       }
     },
     "trial2": {
@@ -987,7 +989,8 @@
       "parameters": {
         "videoFile": "paint-palette_100.mp4",
         "correctObjectName": "Paint palette",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 2
       }
     },
     "trial3": {
@@ -995,7 +998,8 @@
       "parameters": {
         "videoFile": "scissors_100.mp4",
         "correctObjectName": "Scissors",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 3
       }
     },
     "trial4": {
@@ -1003,7 +1007,8 @@
       "parameters": {
         "videoFile": "keys_Overlay.mp4",
         "correctObjectName": "Keys",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 4
       }
     },
     "trial5": {
@@ -1011,7 +1016,8 @@
       "parameters": {
         "videoFile": "rubber-duck_Overlay.mp4",
         "correctObjectName": "Rubber duck",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 5
       }
     },
     "trial6": {
@@ -1019,7 +1025,8 @@
       "parameters": {
         "videoFile": "box-cutter_Overlay.mp4",
         "correctObjectName": "Box cutter",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 6
       }
     },
     "trial7": {
@@ -1027,7 +1034,8 @@
       "parameters": {
         "videoFile": "sunglasses_100.mp4",
         "correctObjectName": "Sunglasses",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 7
       }
     },
     "trial8": {
@@ -1035,7 +1043,8 @@
       "parameters": {
         "videoFile": "pen_Overlay.mp4",
         "correctObjectName": "Pen",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 8
       }
     },
     "trial9": {
@@ -1043,7 +1052,8 @@
       "parameters": {
         "videoFile": "screwdriver_100.mp4",
         "correctObjectName": "Screwdriver",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 9
       }
     },
     "trial10": {
@@ -1051,7 +1061,8 @@
       "parameters": {
         "videoFile": "apple_100.mp4",
         "correctObjectName": "Apple",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 10
       }
     },
     "trial11": {
@@ -1059,7 +1070,8 @@
       "parameters": {
         "videoFile": "banana_Overlay.mp4",
         "correctObjectName": "Banana",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 11
       }
     },
     "trial12": {
@@ -1067,7 +1079,8 @@
       "parameters": {
         "videoFile": "clock_100.mp4",
         "correctObjectName": "Clock",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 12
       }
     },
     "trial13": {
@@ -1075,7 +1088,8 @@
       "parameters": {
         "videoFile": "computer-mouse_Overlay.mp4",
         "correctObjectName": "Computer mouse",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 13
       }
     },
     "trial14": {
@@ -1083,7 +1097,8 @@
       "parameters": {
         "videoFile": "lemon_100.mp4",
         "correctObjectName": "Lemon",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 14
       }
     },
     "trial15": {
@@ -1091,7 +1106,8 @@
       "parameters": {
         "videoFile": "usb-drive_Overlay.mp4",
         "correctObjectName": "Usb drive",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 15
       }
     },
     "trial16": {
@@ -1099,7 +1115,8 @@
       "parameters": {
         "videoFile": "cup_Overlay.mp4",
         "correctObjectName": "Cup",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 16
       }
     },
     "trial17": {
@@ -1107,7 +1124,8 @@
       "parameters": {
         "videoFile": "serving-spoon_Overlay.mp4",
         "correctObjectName": "Serving spoon",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 17
       }
     },
     "trial18": {
@@ -1115,7 +1133,8 @@
       "parameters": {
         "videoFile": "hairdryer_100.mp4",
         "correctObjectName": "Hair dryer",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 18
       }
     },
     "Doubt": {
