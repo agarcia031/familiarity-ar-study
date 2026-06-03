@@ -14,7 +14,7 @@
   },
   "uiConfig": {
     "contactEmail": "amandine",
-    "helpTextPath": "_fam-study/assets/content/help.md",
+    "helpTextPath": "_fam-study_part1/assets/content/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
@@ -27,7 +27,7 @@
   "baseComponents": {
     "video-task-template": {
       "type": "website",
-      "path": "_fam-study/trial.html",
+      "path": "_fam-study_part1/trial.html",
       "instruction": "Watch the video and answer the questions.",
       "forceCompletion": true,
       "nextButtonLocation": "belowStimulus",
@@ -94,8 +94,13 @@
       "instruction": "Please answer the following two questions of self-assessment.",
       "response": [
         {
+          "id": "SelfAssessIntro",
+          "type": "textOnly",
+          "prompt": "Here, *digital technologies* is meant broadly — from the devices and apps people use every day to the systems, networks, and ideas behind them. Everyday familiarity counts, and no particular area is expected: just answer based on whatever you personally know."
+        },
+        {
           "id": "SelfAssessedQ1",
-          "prompt": "How familiar are you with new technologies?",
+          "prompt": "How familiar are you with digital technologies?",
           "type": "likert",
           "required": true,
           "numItems": 7,
@@ -105,19 +110,19 @@
         },
         {
           "id": "SelfAssessedQ2",
-          "prompt": "How would you define your level of expertise in new technologies?",
+          "prompt": "How would you define your level of expertise in digital technologies?",
           "type": "likert",
           "required": true,
           "numItems": 7,
-          "rightLabel": "Extremely",
-          "leftLabel": "Not at all",
+          "rightLabel": "Expert",
+          "leftLabel": "None",
           "location": "belowStimulus"
         }
       ]
     },
     "IntroGlobal": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_instructions_global.md",
+      "path": "_fam-study_part1/assets/content/part1_instructions_global.md",
       "nextButtonText": "Start",
       "response": [
         {
@@ -133,19 +138,19 @@
     },
     "IntroPageOCT": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_instructions_OCT.md",
+      "path": "_fam-study_part1/assets/content/part1_instructions_OCT.md",
       "nextButtonText": "Start",
       "response": []
     },
     "IntroPageWatchingTask": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_instructions_watching_task.md",
+      "path": "_fam-study_part1/assets/content/part1_instructions_watching_task.md",
       "nextButtonText": "Start",
       "response": []
     },
     "ConsentPage": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_consent.md",
+      "path": "_fam-study_part1/assets/content/part1_consent.md",
       "nextButtonText": "I agree",
       "response": []
     },
@@ -1147,7 +1152,7 @@
     },
     "EndPage": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_end.md",
+      "path": "_fam-study_part1/assets/content/part1_end.md",
       "response": []
     }
   },

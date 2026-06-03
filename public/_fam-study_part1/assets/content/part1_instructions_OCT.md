@@ -1,10 +1,7 @@
 # Part 1 — Questionnaire
  
-In this part, you will be shown **41 items** related to new technologies. For each of them, it will be asked your level of familiarity, which you can rate using a scale a scale from **0 to 6**:
+In this part, you will rate how familiar you are with **41 items** related to digital technologies, understood here in the same broad sense as before — from the devices and apps people use every day to the systems, networks, and ideas behind them.
  
-| Score | Meaning |
-|-------|---------|
-| 0 | No knowledge at all |
-| 6 | Expert-level knowledge |
+No special expertise is needed. Some items will feel familiar and others less so which is entirely expected. Please rate each one as honestly as you can, on a scale **from 0** (no knowledge at all) **to 6** (expert-level knowledge).
  
-> There are no right or wrong answers — simply rate each item as honestly as possible based on your own experience.
+There are no right or wrong answers. A low rating simply means the item is unfamiliar to you, which is perfectly normal.
