@@ -21,7 +21,7 @@ Your participation in this study is entirely voluntary and you may stop at any t
 We (researchers) do not have access to your personally identifiable information. All your responses will be stored anonymously. We will check your open-text responses to confirm that no identifiable information is provided. After you paste your completion code, you will not be able to access or delete your data. We will delete your Prolific ID from our data after we verify your response. Once our research project is completed, all anonymized data will be made publicly available on an open science platform. 
 
 ### Potential benefits
-You will receive £2.60 for participating in this study, under the condition that you complete the study, do not rush through the study, and answer the attention check questions correctly.
+You will receive £3 for participating in this study, under the condition that you complete the study, do not rush through the study, and answer the attention check questions correctly.
 
 ### Risks and discomforts
 Your participation in this study does not present any foreseeable risks beyond those experienced in daily life.
