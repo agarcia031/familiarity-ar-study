@@ -65,30 +65,33 @@
     }
   },
   "components": {
-    "myAttentionCheckComponent": {
+    "attentionCheckOCT": {
       "type": "questionnaire",
       "nextButtonLocation": "belowStimulus",
       "response": [
         {
-          "id": "AttentionCheck1",
-          "prompt": "The colour test you are about to take part in is very simple, when asked for your favorite colour you must select 'Green'. This is an attention check.\n\nBased on the text you read above what colour have you been asked to enter ?",
+          "id": "attentionOCT",
+          "prompt": "This is an attention check. To show you're reading the instructions carefully, please ignore the question below and select *Green*, whatever your real answer would be.\n\nWhat is your favourite colour?",
           "required": true,
           "type": "radio",
-          "options": [
-            "Blue",
-            "Yellow",
-            "Orange",
-            "Red",
-            "Green"
-          ]
+          "options": ["Blue", "Yellow", "Orange", "Red", "Green"]
         }
       ],
-      "correctAnswer": [
+      "correctAnswer": [{ "id": "attentionOCT", "answer": "Green" }]
+    },
+    "attentionCheckVideo": {
+      "type": "questionnaire",
+      "nextButtonLocation": "belowStimulus",
+      "response": [
         {
-          "id": "AttentionCheck1",
-          "answer": "Green"
+          "id": "attentionVideo",
+          "prompt": "Another quick attention check. Please ignore the question below and select *Red* this time, whatever your real answer would be.\n\nWhat is your favourite colour?",
+          "required": true,
+          "type": "radio",
+          "options": ["Blue", "Yellow", "Orange", "Red", "Green"]
         }
-      ]
+      ],
+      "correctAnswer": [{ "id": "attentionVideo", "answer": "Red" }]
     },
     "SelfAssessment": {
       "type": "questionnaire",
@@ -146,6 +149,8 @@
     "IntroPageWatchingTask": {
       "type": "markdown",
       "path": "_fam-study_part1/assets/content/part1_instructions_watching_task.md",
+      "instruction": "**That's the end of the first part — thank you!** The study now moves on to a different kind of task. Take a short breather if you'd like, then read the instructions and start when you're ready.",
+      "instructionLocation": "sidebar",
       "nextButtonText": "Start",
       "response": []
     },
@@ -1172,11 +1177,19 @@
     "EndPage": {
       "type": "markdown",
       "path": "_fam-study_part1/assets/content/part1_end.md",
+      "instruction": "We hope to see you again soon!",
+      "instructionLocation": "sidebar",
       "response": []
     }
   },
   "sequence": {
     "order": "fixed",
+    "skip": [
+    { "check": "block", 
+      "condition": "numIncorrect", 
+      "value": 2, 
+      "to": "end" 
+    }],
     "components": [
       "ConsentPage",
       "IntroGlobal",
@@ -1208,7 +1221,7 @@
           "overclaiming20",
           "overclaiming21",
           "overclaiming22",
-          "myAttentionCheckComponent",
+          "attentionCheckOCT",
           "overclaiming23",
           "overclaiming24",
           "overclaiming25",
@@ -1246,7 +1259,7 @@
           "trial9",
           "trial10",
           "trial11",
-          "myAttentionCheckComponent",
+          "attentionCheckVideo",
           "trial12",
           "trial13",
           "trial14",
@@ -1254,15 +1267,6 @@
           "trial16",
           "trial17",
           "trial18"
-        ],
-        "skip": [
-          {
-            "name": "myAttentionCheckComponent",
-            "check": "repeatedComponent",
-            "condition": "numIncorrect",
-            "value": 2,
-            "to": "end"
-          }
         ]
       },
       "Doubt",

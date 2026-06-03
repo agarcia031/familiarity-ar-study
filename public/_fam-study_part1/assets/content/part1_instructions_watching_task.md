@@ -1,9 +1,3 @@
-That's the end of the first part — thank you!
-
-The study now moves on to a different kind of task. Take a short breather if you'd like, then read the instructions below when you're ready.
-
----
-
 ### Instructions for the video watching task:
 You will watch a series of short video clips. Each clip will show a single object on a table. The object may be **real** or **virtual**. Virtual objects have a visual effect applied to them: they tend to be blue, translucent, luminous, and glowing.
 
