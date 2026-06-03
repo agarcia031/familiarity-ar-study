@@ -14,7 +14,7 @@
   },
   "uiConfig": {
     "contactEmail": "amandine",
-    "helpTextPath": "_fam-study/assets/content/help.md",
+    "helpTextPath": "_fam-study_part1/assets/content/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
@@ -27,7 +27,7 @@
   "baseComponents": {
     "video-task-template": {
       "type": "website",
-      "path": "_fam-study/trial.html",
+      "path": "_fam-study_part1/trial.html",
       "instruction": "Watch the video and answer the questions.",
       "forceCompletion": true,
       "nextButtonLocation": "belowStimulus",
@@ -59,43 +59,52 @@
     },
     "overclaiming-question-template": {
       "type": "questionnaire",
+      "instruction": "Answer spontaneously, based on what you already know.",
       "nextButtonLocation": "aboveStimulus",
       "response": []
     }
   },
   "components": {
-    "myAttentionCheckComponent": {
+    "attentionCheckOCT": {
       "type": "questionnaire",
       "nextButtonLocation": "belowStimulus",
       "response": [
         {
-          "id": "AttentionCheck1",
-          "prompt": "The colour test you are about to take part in is very simple, when asked for your favorite colour you must select 'Green'. This is an attention check.\n\nBased on the text you read above what colour have you been asked to enter ?",
+          "id": "attentionOCT",
+          "prompt": "This is an attention check. To show you're reading the instructions carefully, please ignore the question below and select *Green*, whatever your real answer would be.\n\nWhat is your favourite colour?",
           "required": true,
           "type": "radio",
-          "options": [
-            "Blue",
-            "Yellow",
-            "Orange",
-            "Red",
-            "Green"
-          ]
+          "options": ["Blue", "Yellow", "Orange", "Red", "Green"]
         }
       ],
-      "correctAnswer": [
+      "correctAnswer": [{ "id": "attentionOCT", "answer": "Green" }]
+    },
+    "attentionCheckVideo": {
+      "type": "questionnaire",
+      "nextButtonLocation": "belowStimulus",
+      "response": [
         {
-          "id": "AttentionCheck1",
-          "answer": "Green"
+          "id": "attentionVideo",
+          "prompt": "Another quick attention check. Please ignore the question below and select *Red* this time, whatever your real answer would be.\n\nWhat is your favourite colour?",
+          "required": true,
+          "type": "radio",
+          "options": ["Blue", "Yellow", "Orange", "Red", "Green"]
         }
-      ]
+      ],
+      "correctAnswer": [{ "id": "attentionVideo", "answer": "Red" }]
     },
     "SelfAssessment": {
       "type": "questionnaire",
       "instruction": "Please answer the following two questions of self-assessment.",
       "response": [
         {
+          "id": "SelfAssessIntro",
+          "type": "textOnly",
+          "prompt": "Here, *digital technologies* is meant broadly — from the devices and apps people use every day to the systems, networks, and ideas behind them. Everyday familiarity counts, and no particular area is expected: just answer based on whatever you personally know."
+        },
+        {
           "id": "SelfAssessedQ1",
-          "prompt": "How familiar are you with new technologies?",
+          "prompt": "How familiar are you with digital technologies?",
           "type": "likert",
           "required": true,
           "numItems": 7,
@@ -105,19 +114,19 @@
         },
         {
           "id": "SelfAssessedQ2",
-          "prompt": "How would you define your level of expertise in new technologies?",
+          "prompt": "How would you define your level of expertise in digital technologies?",
           "type": "likert",
           "required": true,
           "numItems": 7,
-          "rightLabel": "Extremely",
-          "leftLabel": "Not at all",
+          "rightLabel": "Expert",
+          "leftLabel": "None",
           "location": "belowStimulus"
         }
       ]
     },
     "IntroGlobal": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_instructions_global.md",
+      "path": "_fam-study_part1/assets/content/part1_instructions_global.md",
       "nextButtonText": "Start",
       "response": [
         {
@@ -133,19 +142,21 @@
     },
     "IntroPageOCT": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_instructions_OCT.md",
+      "path": "_fam-study_part1/assets/content/part1_instructions_OCT.md",
       "nextButtonText": "Start",
       "response": []
     },
     "IntroPageWatchingTask": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_instructions_watching_task.md",
+      "path": "_fam-study_part1/assets/content/part1_instructions_watching_task.md",
+      "instruction": "**That's the end of the first part — thank you!** The study now moves on to a different kind of task. Take a short breather if you'd like, then read the instructions and start when you're ready.",
+      "instructionLocation": "sidebar",
       "nextButtonText": "Start",
       "response": []
     },
     "ConsentPage": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_consent.md",
+      "path": "_fam-study_part1/assets/content/part1_consent.md",
       "nextButtonText": "I agree",
       "response": []
     },
@@ -974,7 +985,8 @@
       "parameters": {
         "videoFile": "hanger_100.mp4",
         "correctObjectName": "Hanger",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 1
       }
     },
     "trial2": {
@@ -982,7 +994,8 @@
       "parameters": {
         "videoFile": "paint-palette_100.mp4",
         "correctObjectName": "Paint palette",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 2
       }
     },
     "trial3": {
@@ -990,7 +1003,8 @@
       "parameters": {
         "videoFile": "scissors_100.mp4",
         "correctObjectName": "Scissors",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 3
       }
     },
     "trial4": {
@@ -998,7 +1012,8 @@
       "parameters": {
         "videoFile": "keys_Overlay.mp4",
         "correctObjectName": "Keys",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 4
       }
     },
     "trial5": {
@@ -1006,7 +1021,8 @@
       "parameters": {
         "videoFile": "rubber-duck_Overlay.mp4",
         "correctObjectName": "Rubber duck",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 5
       }
     },
     "trial6": {
@@ -1014,7 +1030,8 @@
       "parameters": {
         "videoFile": "box-cutter_Overlay.mp4",
         "correctObjectName": "Box cutter",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 6
       }
     },
     "trial7": {
@@ -1022,7 +1039,8 @@
       "parameters": {
         "videoFile": "sunglasses_100.mp4",
         "correctObjectName": "Sunglasses",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 7
       }
     },
     "trial8": {
@@ -1030,7 +1048,8 @@
       "parameters": {
         "videoFile": "pen_Overlay.mp4",
         "correctObjectName": "Pen",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 8
       }
     },
     "trial9": {
@@ -1038,7 +1057,8 @@
       "parameters": {
         "videoFile": "screwdriver_100.mp4",
         "correctObjectName": "Screwdriver",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 9
       }
     },
     "trial10": {
@@ -1046,7 +1066,8 @@
       "parameters": {
         "videoFile": "apple_100.mp4",
         "correctObjectName": "Apple",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 10
       }
     },
     "trial11": {
@@ -1054,7 +1075,8 @@
       "parameters": {
         "videoFile": "banana_Overlay.mp4",
         "correctObjectName": "Banana",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 11
       }
     },
     "trial12": {
@@ -1062,7 +1084,8 @@
       "parameters": {
         "videoFile": "clock_100.mp4",
         "correctObjectName": "Clock",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 12
       }
     },
     "trial13": {
@@ -1070,7 +1093,8 @@
       "parameters": {
         "videoFile": "computer-mouse_Overlay.mp4",
         "correctObjectName": "Computer mouse",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 13
       }
     },
     "trial14": {
@@ -1078,7 +1102,8 @@
       "parameters": {
         "videoFile": "lemon_100.mp4",
         "correctObjectName": "Lemon",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 14
       }
     },
     "trial15": {
@@ -1086,7 +1111,8 @@
       "parameters": {
         "videoFile": "usb-drive_Overlay.mp4",
         "correctObjectName": "Usb drive",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 15
       }
     },
     "trial16": {
@@ -1094,7 +1120,8 @@
       "parameters": {
         "videoFile": "cup_Overlay.mp4",
         "correctObjectName": "Cup",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 16
       }
     },
     "trial17": {
@@ -1102,7 +1129,8 @@
       "parameters": {
         "videoFile": "serving-spoon_Overlay.mp4",
         "correctObjectName": "Serving spoon",
-        "correctSourceName": "Virtual"
+        "correctSourceName": "Virtual",
+        "trialNumber": 17
       }
     },
     "trial18": {
@@ -1110,7 +1138,8 @@
       "parameters": {
         "videoFile": "hairdryer_100.mp4",
         "correctObjectName": "Hair dryer",
-        "correctSourceName": "Real"
+        "correctSourceName": "Real",
+        "trialNumber": 18
       }
     },
     "Doubt": {
@@ -1147,12 +1176,20 @@
     },
     "EndPage": {
       "type": "markdown",
-      "path": "_fam-study/assets/content/part1_end.md",
+      "path": "_fam-study_part1/assets/content/part1_end.md",
+      "instruction": "We hope to see you again soon!",
+      "instructionLocation": "sidebar",
       "response": []
     }
   },
   "sequence": {
     "order": "fixed",
+    "skip": [
+    { "check": "block", 
+      "condition": "numIncorrect", 
+      "value": 2, 
+      "to": "end" 
+    }],
     "components": [
       "ConsentPage",
       "IntroGlobal",
@@ -1184,7 +1221,7 @@
           "overclaiming20",
           "overclaiming21",
           "overclaiming22",
-          "myAttentionCheckComponent",
+          "attentionCheckOCT",
           "overclaiming23",
           "overclaiming24",
           "overclaiming25",
@@ -1222,7 +1259,7 @@
           "trial9",
           "trial10",
           "trial11",
-          "myAttentionCheckComponent",
+          "attentionCheckVideo",
           "trial12",
           "trial13",
           "trial14",
@@ -1230,15 +1267,6 @@
           "trial16",
           "trial17",
           "trial18"
-        ],
-        "skip": [
-          {
-            "name": "myAttentionCheckComponent",
-            "check": "repeatedComponent",
-            "condition": "numIncorrect",
-            "value": 2,
-            "to": "end"
-          }
         ]
       },
       "Doubt",

@@ -6,6 +6,9 @@
     <title>Video Task</title>
 
     <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
         /* --- 1. GLOBAL STYLES (Bigger Text + Centered Layout) --- */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -184,6 +187,17 @@
 
         .hidden { display: none !important; }
 
+        .compare-block {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #f0e2b8;
+        }
+        .compare-block:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
         /* Helper for the next button container */
         .nav-controls {
             margin-top: 25px;
@@ -191,11 +205,22 @@
             padding-top: 20px;
         }
 
+        #progress-indicator {
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.95em;
+            color: #6c757d;
+            letter-spacing: 0.3px;
+        }
+
     </style>
 
     <script src="../revisitUtilities/revisit-communicate.js"></script>
 </head>
 <body>
+    <div id="progress-indicator">Video <span id="trialNum">1</span> of 18</div>
 
 <div id="video-stage">
     <video id="stimulus-video" autoplay muted playsinline style="pointer-events:none; width:100%; max-width:1000px;">
@@ -241,9 +266,24 @@
 
     <div id="correction" class="question-container hidden">
         <div class="correction-message">
-            <div class="participant-answer"><strong>Your answer:</strong> <span id="participantObjectName"></span></div>
-            <div class="participant-answer"><strong>Your source choice:</strong> <span id="participantSourceChoice"></span></div>
-            <div class="correct-answer"><strong>Suggested answer:</strong> <span id="correctObjectName"></span></div>
+            <div class="participant-answer">
+                <strong>Your answer:</strong> 
+                <span id="participantObjectName"></span>
+            </div>
+            <div class="correct-answer">
+                <strong>Suggested answer:</strong> 
+                <span id="correctObjectName"></span>
+            </div>
+            <div class="compare-block">
+                <div class="participant-answer">
+                    <strong>Your source choice:</strong> 
+                    <span id="participantSourceChoice"></span>
+                </div>
+                <div class="correct-answer">
+                    <strong>Correct source:</strong> 
+                    <span id="correctSourceChoice"></span>
+                </div>
+            </div>
         </div>
         <div id="finalMessage" class="question-container" style="border-color: #28a745; background-color: #d4edda;">
         <h3 style="color: #155724;">Trial Complete!</h3>
@@ -262,10 +302,12 @@
     };
 
     let suggestedObjectName = "Unknown";
+    let correctSourceName = "Unknown";
 
     // RECEIVE REVISIT PARAMETERS
     if (typeof Revisit !== 'undefined') {
         Revisit.onDataReceive((data) => {
+            console.log('REVISIT DATA:', data);
             const normalizeVideoFile = (videoFile) => {
                 if (!videoFile || typeof videoFile !== 'string') return '';
                 if (/^(https?:)?\/\//.test(videoFile) || videoFile.startsWith('/')) return videoFile;
@@ -274,6 +316,10 @@
             };
             if (data.videoFile) video.src = normalizeVideoFile(data.videoFile);
             if (data.correctObjectName) suggestedObjectName = data.correctObjectName;
+            if (data.correctSourceName) correctSourceName = data.correctSourceName;
+            if (data.trialNumber != null) {
+                document.getElementById('trialNum').textContent = data.trialNumber;
+            }
         });
     }
 
@@ -299,6 +345,7 @@
         document.getElementById('participantObjectName').textContent = trialData.objectName;
         document.getElementById('participantSourceChoice').textContent = trialData.sourceChoice;
         document.getElementById('correctObjectName').textContent = suggestedObjectName;
+        document.getElementById('correctSourceChoice').textContent = correctSourceName;
 
         document.getElementById('stepSource').classList.add('hidden');
         document.getElementById('correction').classList.remove('hidden');
