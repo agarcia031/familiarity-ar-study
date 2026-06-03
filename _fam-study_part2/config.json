@@ -21,7 +21,7 @@
     "withSidebar": true,
     "nextOnEnter": true,
     "enumerateQuestions": true,
-    "studyEndMsg": "Thank you for completing the study. You may click this link and return to Prolific: [X](X)",
+    "studyEndMsg": "Thank you for completing the study. You may click this link and return to Prolific: [https://app.prolific.com/submissions/complete?cc=C12F1D39](https://app.prolific.com/submissions/complete?cc=C12F1D39)",
     "urlParticipantIdParam": "PROLIFIC_PID"
   },
   "baseComponents": {
