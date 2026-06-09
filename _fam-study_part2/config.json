@@ -14,7 +14,7 @@
   },
   "uiConfig": {
     "contactEmail": "",
-    "helpTextPath": "assets/content/help.md",
+    "helpTextPath": "_fam-study_part2/assets/content/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
@@ -94,13 +94,15 @@
     },
     "ConsentPage": {
       "type": "markdown",
-      "path": "assets/content/consent.md",
+      "path": "_fam-study_part2/assets/content/part2_consent.md",
       "nextButtonText": "I agree",
       "response": []
     },
     "IntroPage": {
       "type": "markdown",
-      "path": "assets/content/instructions.md",
+      "path": "_fam-study_part2/assets/content/part2_instructions.md",
+      "instruction": "Please read the following instructions before starting the study.",
+      "instructionLocation": "sidebar",
       "response": [
         {
           "id": "prolificId",
@@ -115,24 +117,31 @@
     },
     "PreTrialEstimation": {
       "type": "questionnaire",
+      "instruction": "These two questions ask for your best guess. A rough ballpark is exactly what we're looking for — it's completely normal not to know for sure, so just go with your overall impression.",
+      "instructionLocation": "sidebar",
       "response": [
         {
           "id": "estimationRecognition",
-          "prompt": "In your opinion, how many of the 24 objects you saw in Part 1 do you think you could identify if given their name?",
-          "required": true,
-          "location": "belowStimulus",
-          "type": "numerical",
-          "min": 0,
-          "max": 24,
-          "placeholder": "Select a number between 0 and 24"
-        },
-        {
-          "id": "estimationSource",
-          "prompt": "Among the objects you think you will remember, can you estimate the ratio for which you could correctly identify the source — real or virtual — of the object?",
+          "prompt": "Out of the **18** objects you saw in Part 1, roughly how many do you think you could still recognise today?",
           "required": true,
           "location": "belowStimulus",
           "type": "slider",
-          "startingValue": 0,
+          "snap": false,
+          "step": 1,
+          "startingValue": 9,
+          "options": [
+            { "label": "0", "value": 0 },
+            { "label": "9", "value": 9 },
+            { "label": "18", "value": 18 }
+          ]
+        },
+        {
+          "id": "estimationSource",
+          "prompt": "Among the objects you think you'll remember, roughly what proportion could you correctly identify as real or virtual?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "slider",
+          "startingValue": 50,
           "options": [
             { "label": "0%", "value": 0 },
             { "label": "25%", "value": 25 },
@@ -146,7 +155,7 @@
     "trial1": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/screwdriver.png",
+        "imageFile": "screwdriver.png",
         "objectName": "Screwdriver",
         "source": "Real"
       }
@@ -154,7 +163,7 @@
     "trial2": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/sunglasses.png",
+        "imageFile": "sunglasses.png",
         "objectName": "Sunglasses",
         "source": "Real"
       }
@@ -162,7 +171,7 @@
     "trial3": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/pen.png",
+        "imageFile": "pen.png",
         "objectName": "Pen",
         "source": "Virtual"
       }
@@ -170,7 +179,7 @@
     "trial4": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/cup.png",
+        "imageFile": "cup.png",
         "objectName": "Cup",
         "source": "Virtual"
       }
@@ -178,7 +187,7 @@
     "trial5": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/hair-dryer.png",
+        "imageFile": "hair-dryer.png",
         "objectName": "Hair dryer",
         "source": "Real"
       }
@@ -186,7 +195,7 @@
     "trial6": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/serving-spoon.png",
+        "imageFile": "serving-spoon.png",
         "objectName": "Serving spoon",
         "source": "Virtual"
       }
@@ -194,7 +203,7 @@
     "trial7": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/box-cutter.png",
+        "imageFile": "box-cutter.png",
         "objectName": "Box cutter",
         "source": "Virtual"
       }
@@ -202,7 +211,7 @@
     "trial8": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/paint-palette.png",
+        "imageFile": "paint-palette.png",
         "objectName": "Paint palette",
         "source": "Real"
       }
@@ -210,7 +219,7 @@
     "trial9": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/rubber-duck.png",
+        "imageFile": "rubber-duck.png",
         "objectName": "Rubber duck",
         "source": "Virtual"
       }
@@ -218,7 +227,7 @@
     "trial10": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/hanger.png",
+        "imageFile": "hanger.png",
         "objectName": "Hanger",
         "source": "Real"
       }
@@ -226,7 +235,7 @@
     "trial11": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/clock.png",
+        "imageFile": "clock.png",
         "objectName": "Clock",
         "source": "Real"
       }
@@ -234,7 +243,7 @@
     "trial12": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/scissors.png",
+        "imageFile": "scissors.png",
         "objectName": "Scissors",
         "source": "Real"
       }
@@ -242,7 +251,7 @@
     "trial13": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/usb-drive.png",
+        "imageFile": "usb-drive.png",
         "objectName": "Usb drive",
         "source": "Virtual"
       }
@@ -250,7 +259,7 @@
     "trial14": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/computer-mouse.png",
+        "imageFile": "computer-mouse.png",
         "objectName": "Computer mouse",
         "source": "Virtual"
       }
@@ -258,7 +267,7 @@
     "trial15": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/banana.png",
+        "imageFile": "banana.png",
         "objectName": "Banana",
         "source": "Virtual"
       }
@@ -266,7 +275,7 @@
     "trial16": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/lemon.png",
+        "imageFile": "lemon.png",
         "objectName": "Lemon",
         "source": "Real"
       }
@@ -274,7 +283,7 @@
     "trial17": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/keys.png",
+        "imageFile": "keys.png",
         "objectName": "Keys",
         "source": "Virtual"
       }
@@ -282,7 +291,7 @@
     "trial18": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/apple.png",
+        "imageFile": "apple.png",
         "objectName": "Apple",
         "source": "Real"
       }
@@ -290,7 +299,7 @@
     "trial19": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/potato.png",
+        "imageFile": "potato.png",
         "objectName": "Potato",
         "source": "New"
       }
@@ -298,7 +307,7 @@
     "trial20": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/spray-bottle.png",
+        "imageFile": "spray-bottle.png",
         "objectName": "Spray bottle",
         "source": "New"
       }
@@ -306,7 +315,7 @@
     "trial21": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/scotch-tape.png",
+        "imageFile": "scotch-tape.png",
         "objectName": "Scotch tape",
         "source": "New"
       }
@@ -314,7 +323,7 @@
     "trial22": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/tennis-ball.png",
+        "imageFile": "tennis-ball.png",
         "objectName": "Tennis ball",
         "source": "New"
       }
@@ -322,7 +331,7 @@
     "trial23": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/vase.png",
+        "imageFile": "vase.png",
         "objectName": "Vase",
         "source": "New"
       }
@@ -330,7 +339,7 @@
     "trial24": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/fan.png",
+        "imageFile": "fan.png",
         "objectName": "Fan",
         "source": "New"
       }
@@ -338,7 +347,7 @@
     "trial25": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/bottle-opener.png",
+        "imageFile": "bottle-opener.png",
         "objectName": "Bottle opener",
         "source": "New"
       }
@@ -346,7 +355,7 @@
     "trial26": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/grapes.png",
+        "imageFile": "grapes.png",
         "objectName": "Grapes",
         "source": "New"
       }
@@ -354,7 +363,7 @@
     "trial27": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "assets/icons/hat.png",
+        "imageFile": "hat.png",
         "objectName": "Hat",
         "source": "New"
       }
@@ -412,10 +421,9 @@
     },
   "EndPage": {
     "type": "markdown",
-    "path": "assets/content/end.md",
+    "path": "_fam-study_part2/assets/content/part2_end.md",
     "response": []
   }
-
 },
   "sequence": {
     "order": "fixed",
