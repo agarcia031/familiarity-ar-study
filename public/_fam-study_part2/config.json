@@ -155,7 +155,7 @@
     "trial1": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "screwdriver.png",
+        "imageFile": "assets/icons/screwdriver.png",
         "objectName": "Screwdriver",
         "source": "Real"
       }
@@ -163,7 +163,7 @@
     "trial2": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "sunglasses.png",
+        "imageFile": "assets/icons/sunglasses.png",
         "objectName": "Sunglasses",
         "source": "Real"
       }
@@ -171,7 +171,7 @@
     "trial3": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "pen.png",
+        "imageFile": "assets/icons/pen.png",
         "objectName": "Pen",
         "source": "Virtual"
       }
@@ -179,7 +179,7 @@
     "trial4": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "cup.png",
+        "imageFile": "assets/icons/cup.png",
         "objectName": "Cup",
         "source": "Virtual"
       }
@@ -187,7 +187,7 @@
     "trial5": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "hair-dryer.png",
+        "imageFile": "assets/icons/hair-dryer.png",
         "objectName": "Hair dryer",
         "source": "Real"
       }
@@ -195,7 +195,7 @@
     "trial6": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "serving-spoon.png",
+        "imageFile": "assets/icons/serving-spoon.png",
         "objectName": "Serving spoon",
         "source": "Virtual"
       }
@@ -203,7 +203,7 @@
     "trial7": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "box-cutter.png",
+        "imageFile": "assets/icons/box-cutter.png",
         "objectName": "Box cutter",
         "source": "Virtual"
       }
@@ -211,7 +211,7 @@
     "trial8": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "paint-palette.png",
+        "imageFile": "assets/icons/paint-palette.png",
         "objectName": "Paint palette",
         "source": "Real"
       }
@@ -219,7 +219,7 @@
     "trial9": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "rubber-duck.png",
+        "imageFile": "assets/icons/rubber-duck.png",
         "objectName": "Rubber duck",
         "source": "Virtual"
       }
@@ -227,7 +227,7 @@
     "trial10": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "hanger.png",
+        "imageFile": "assets/icons/hanger.png",
         "objectName": "Hanger",
         "source": "Real"
       }
@@ -235,7 +235,7 @@
     "trial11": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "clock.png",
+        "imageFile": "assets/icons/clock.png",
         "objectName": "Clock",
         "source": "Real"
       }
@@ -243,7 +243,7 @@
     "trial12": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "scissors.png",
+        "imageFile": "assets/icons/scissors.png",
         "objectName": "Scissors",
         "source": "Real"
       }
@@ -251,7 +251,7 @@
     "trial13": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "usb-drive.png",
+        "imageFile": "assets/icons/usb-drive.png",
         "objectName": "Usb drive",
         "source": "Virtual"
       }
@@ -259,7 +259,7 @@
     "trial14": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "computer-mouse.png",
+        "imageFile": "assets/icons/computer-mouse.png",
         "objectName": "Computer mouse",
         "source": "Virtual"
       }
@@ -267,7 +267,7 @@
     "trial15": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "banana.png",
+        "imageFile": "assets/icons/banana.png",
         "objectName": "Banana",
         "source": "Virtual"
       }
@@ -275,7 +275,7 @@
     "trial16": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "lemon.png",
+        "imageFile": "assets/icons/lemon.png",
         "objectName": "Lemon",
         "source": "Real"
       }
@@ -283,7 +283,7 @@
     "trial17": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "keys.png",
+        "imageFile": "assets/icons/keys.png",
         "objectName": "Keys",
         "source": "Virtual"
       }
@@ -291,7 +291,7 @@
     "trial18": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "apple.png",
+        "imageFile": "assets/icons/apple.png",
         "objectName": "Apple",
         "source": "Real"
       }
@@ -299,7 +299,7 @@
     "trial19": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "potato.png",
+        "imageFile": "assets/icons/potato.png",
         "objectName": "Potato",
         "source": "New"
       }
@@ -307,7 +307,7 @@
     "trial20": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "spray-bottle.png",
+        "imageFile": "assets/icons/spray-bottle.png",
         "objectName": "Spray bottle",
         "source": "New"
       }
@@ -315,7 +315,7 @@
     "trial21": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "scotch-tape.png",
+        "imageFile": "assets/icons/scotch-tape.png",
         "objectName": "Scotch tape",
         "source": "New"
       }
@@ -323,7 +323,7 @@
     "trial22": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "tennis-ball.png",
+        "imageFile": "assets/icons/tennis-ball.png",
         "objectName": "Tennis ball",
         "source": "New"
       }
@@ -331,7 +331,7 @@
     "trial23": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "vase.png",
+        "imageFile": "assets/icons/vase.png",
         "objectName": "Vase",
         "source": "New"
       }
@@ -339,7 +339,7 @@
     "trial24": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "fan.png",
+        "imageFile": "assets/icons/fan.png",
         "objectName": "Fan",
         "source": "New"
       }
@@ -347,7 +347,7 @@
     "trial25": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "bottle-opener.png",
+        "imageFile": "assets/icons/bottle-opener.png",
         "objectName": "Bottle opener",
         "source": "New"
       }
@@ -355,7 +355,7 @@
     "trial26": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "grapes.png",
+        "imageFile": "assets/icons/grapes.png",
         "objectName": "Grapes",
         "source": "New"
       }
@@ -363,7 +363,7 @@
     "trial27": {
       "baseComponent": "icon-task",
       "parameters": {
-        "imageFile": "hat.png",
+        "imageFile": "assets/icons/hat.png",
         "objectName": "Hat",
         "source": "New"
       }
