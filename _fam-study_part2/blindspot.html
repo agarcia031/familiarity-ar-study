@@ -203,7 +203,16 @@
             return;
         }
 
-        // Stage 3 — explanation: skip Enter entirely (textarea)
+        // Stage 3 — explanation (textarea): Ctrl/Cmd+Enter validates, plain Enter = newline
+        const btnFinish = document.getElementById('btn-finish');
+        if (btnFinish && !btnFinish.classList.contains('hidden')) {
+            if (e.ctrlKey || e.metaKey) {
+                e.preventDefault();
+                submitExplanationAndFinish();
+            }
+            return;
+        }
+
     });
     
     let questionnaireAnswers = {
