@@ -102,6 +102,8 @@
     },
     "ConsentPage": {
       "type": "markdown",
+      "instruction": "Welcome back!",
+      "instructionLocation": "sidebar",
       "path": "_fam-study_part2/assets/content/part2_consent.md",
       "nextButtonText": "I agree",
       "response": []
@@ -123,14 +125,14 @@
         }
       ]
     },
-    "PreTrialEstimation": {
+    "MetaAssessment": {
       "type": "questionnaire",
       "instruction": "These two questions ask for your best guess. A rough ballpark is exactly what we're looking for — it's completely normal not to know for sure, so just go with your overall impression.",
       "instructionLocation": "sidebar",
       "response": [
         {
           "id": "estimationRecognition",
-          "prompt": "Out of the **18** objects you saw in Part 1, roughly how many do you think you could still recognise today?",
+          "prompt": "Out of the **18** objects you saw in Part 1, roughly how many do you think you recognised today?",
           "required": true,
           "location": "belowStimulus",
           "type": "slider",
@@ -145,7 +147,7 @@
         },
         {
           "id": "estimationSource",
-          "prompt": "Among the objects you think you'll remember, roughly what proportion could you correctly identify as real or virtual?",
+          "prompt": "Among the objects you recognised, roughly what proportion do you think you correctly identified as real or virtual?",
           "required": true,
           "location": "belowStimulus",
           "type": "slider",
@@ -380,8 +382,6 @@
     "BlindSpotQuestionnaire": {
       "type": "website",
       "path": "_fam-study_part2/blindspot.html",
-      "instruction": "Before we end, we'd like to ask you a few more questions about your overall confidence in your answers.",
-      "instructionLocation": "sidebar",
       "response": [
         {
           "id": "personalExtent",
@@ -417,6 +417,8 @@
     
     "PostQuestionnaire": {
       "type": "questionnaire",
+      "instruction": "One last question before the end. This one is optional in spirit — anything you tell us helps.",
+      "instructionLocation": "sidebar",
       "response": [
         {
           "id": "q1",
@@ -437,17 +439,9 @@
 },
   "sequence": {
     "order": "fixed",
-    "skip": [
-          {
-            "check": "block",
-            "condition": "numIncorrect",
-            "value": 2,
-            "to": "end"
-          }],
     "components": [
       "ConsentPage",
       "IntroPage",
-      "PreTrialEstimation",
       {
         "order": "random",
         "components": [
@@ -457,8 +451,16 @@
           "attentionCheck2",
           "trial12", "trial13", "trial14", "trial15", "trial16", "trial17", "trial18", "trial19", "trial20", "trial21", "trial22", "trial23", "trial24",
           "trial25", "trial26", "trial27"
-        ]
+        ],
+        "skip": [
+          {
+            "check": "block",
+            "condition": "numIncorrect",
+            "value": 2,
+            "to": "end"
+          }]
       },
+      "MetaAssessment",
       "BlindSpotQuestionnaire",
       "PostQuestionnaire",
       "EndPage"

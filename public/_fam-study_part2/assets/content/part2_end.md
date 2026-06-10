@@ -1,51 +1,46 @@
-# Thank You for Participating!
+# Thank you — and what this study was really about
 
-Thank you for completing this part of the experiment. Before you go, please take a moment to read the following important information about the study.
-
----
-
-## What the Study Was Actually About
-
-As described in the consent form, you were initially told that this study examined the perception of virtual objects in augmented reality. 
-
-In reality, the study examines how people’s **self-perceived familiarity with digital technologies** relates to two key aspects:
-
-1. **Source confusion —** the tendency to misattribute the origin of a piece of information (for instance, remembering digital or virtual content as real), and
-2. **Confidence bias —** the belief that one is less likely than others to make such errors.
-
-In the first part of the experiment, you completed a vocabulary recognition test that included both real and fictitious terms. This "overclaiming" task measures a natural human tendency to overestimate one’s knowledge or familiarity. To preserve the validity of the measure, we could not disclose beforehand that some terms were non-existent. 
-Here the list of items wich were fictional :
-
-Please note that endorsing fictitious items is a normal and common cognitive phenomenon — it does not indicate any pathology, lack of knowledge, or dishonesty.
-
-We aim to explore whether this perceived familiarity can sometimes lead to overconfidence, a well-documented cognitive bias where increased experience in a domain may paradoxically reduce vigilance (e.g., Miller et al., 2012; Fernandes et al., 2026).
-
-All data collected in this session will be used to draw conclusions about this effect.
+Thank you for completing both parts of this study. Now that you've finished, we can tell you what it was really about.
 
 ---
 
-## Why We Could Not Tell You This Beforehand
+## What we were studying
 
-To properly test our hypotheses, full details of the study could not be disclosed in advance. This ensured that your responses remained spontaneous and were not influenced by prior knowledge of the study's true objective. We regret this necessary deception and sincerely appreciate your understanding.
+The consent form told you this study was about how people perceive virtual objects in augmented reality. In fact, it looks at how your **self-perceived familiarity with digital technologies** relates to two things:
+
+1. **Source confusion** — misremembering where information came from (for example, recalling virtual content as real).
+2. **Confidence bias** — believing you are less prone to such errors than other people are.
+
+In the first part, the familiarity test included some **fictitious terms** alongside real ones. This is an "overclaiming" measure: reporting familiarity with things that don't exist is a normal, well-documented tendency — it doesn't reflect carelessness, lack of knowledge, or dishonesty, and there was no way to pass or fail.
+
+In the second part, you judged whether each object had first appeared as real or virtual (a test of *source memory*), and a few objects were new. You were then asked to reflect on a statement linking technology familiarity to overestimating one's own memory.
+
+We're interested in whether perceived familiarity *might* sometimes lead to overconfidence — a documented cognitive bias where greater experience in a domain can paradoxically reduce vigilance (e.g., Miller et al., 2012; Fernandes et al., 2026). But this is not an established fact: it is the very question this study sets out to test. We don't yet know whether greater familiarity really is associated with overconfidence in source memory — or, if it is, whether people recognise this tendency in themselves or overlook it. Your answers are what let us find out.
 
 ---
 
-## Your Data & Confidentiality
+## Why we couldn't tell you beforehand
 
-All other aspects of the original consent form remain fully accurate. Your data is protected as follows:
+If we had described the real purpose in advance, your responses might no longer have been spontaneous — knowing that some terms were invented, or what we expected to find, could have changed how you answered. This is why some details were withheld. We appreciate your understanding.
+
+---
+
+## Your data
+
+Everything else in the original consent form still holds:
 
 - Your responses are not linked to any identifying information
 - Your data does not constitute personal data
-- Participants are referred to only as Participant 1, Participant 2, etc.
+- Responses are identified only as Participant 1, Participant 2, and so on.
 
 ---
 
-## Right to Withdraw
+## Withdrawing your data
 
-Now that you are fully informed of the study's true purpose, you have the right to withdraw your data. If you wish to have your data permanently deleted, please inform the investigator before leaving.
+Now that you know the true purpose, you have the right to withdraw your data. To have it permanently deleted, contact us at [email] before you leave this page.
 
 ---
 
-## One Last Request
+## One last request
 
-Please do not discuss the study's procedures or hypotheses with anyone who may participate in the future. Doing so could influence their responses and affect the validity of our results. Thank you for helping us maintain the integrity of this research.
+Please don't share the study's procedures or hypotheses with anyone who might take part later — it could influence their responses and affect our results. Thank you for helping protect the integrity of this research.
