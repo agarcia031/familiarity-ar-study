@@ -1,4 +1,4 @@
-### Participant Information Notice
+## Participant Information Notice
 
 Please read this information notice carefully. We recommend that you save or print this page.
 
@@ -70,6 +70,6 @@ If you have any questions, complaints, suggestions, or concerns, please contact:
 * University of Bordeaux Ethical Committee — cer.ub@u-bordeaux.fr
 * Inria Data Protection Officer — dpo@inria.fr
 
-### Consent
+## Consent
 
 By clicking the “I agree” button below, you certify that you have read and understood the information above and that you are free to withdraw your consent or withdraw from the research at any time.

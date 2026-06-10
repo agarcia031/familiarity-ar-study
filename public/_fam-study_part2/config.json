@@ -13,7 +13,7 @@
     ]
   },
   "uiConfig": {
-    "contactEmail": "",
+    "contactEmail": "pierre.dragicevic@inria.fr",
     "helpTextPath": "_fam-study_part2/assets/content/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
