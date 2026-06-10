@@ -68,29 +68,37 @@
     }
   },
   "components": {
-    "myAttentionCheckComponent": {
+    "attentionCheck1": {
       "type": "questionnaire",
+      "nextButtonLocation": "belowStimulus",
+      "instruction": "Attention check",
+      "instructionLocation": "sidebar",
       "response": [
         {
-          "id": "AttentionCheck1",
-          "prompt": "The colour test you are about to take part in is very simple, when asked for your favorite colour you must select 'Orange'. This is an attention check.\n\nBased on the text you read above what colour have you been asked to enter ?",
+          "id": "attention1",
+          "prompt": "To show you're reading the instructions carefully, please ignore the question below and select *Orange*, whatever your real answer would be.\n\nWhat is your favourite colour?",
           "required": true,
           "type": "radio",
-          "options": [
-            "Blue",
-            "Yellow",
-            "Orange",
-            "Red",
-            "Green"
-          ]
+          "options": ["Blue", "Yellow", "Orange", "Red", "Green"]
         }
       ],
-      "correctAnswer": [
+      "correctAnswer": [{ "id": "attention1", "answer": "Orange" }]
+    },
+    "attentionCheck2": {
+      "type": "questionnaire",
+      "nextButtonLocation": "belowStimulus",
+      "instruction": "Attention check",
+      "instructionLocation": "sidebar",
+      "response": [
         {
-          "id": "AttentionCheck1",
-          "answer": "Orange"
+          "id": "attention2",
+          "prompt": "Please ignore the question below and select *Yellow*, whatever your real answer would be.\n\nWhat is your favourite colour?",
+          "required": true,
+          "type": "radio",
+          "options": ["Blue", "Yellow", "Orange", "Red", "Green"]
         }
-      ]
+      ],
+      "correctAnswer": [{ "id": "attention2", "answer": "Yellow" }]
     },
     "ConsentPage": {
       "type": "markdown",
@@ -372,6 +380,8 @@
     "BlindSpotQuestionnaire": {
       "type": "website",
       "path": "_fam-study_part2/blindspot.html",
+      "instruction": "Before we end, we'd like to ask you a few more questions about your overall confidence in your answers.",
+      "instructionLocation": "sidebar",
       "response": [
         {
           "id": "personalExtent",
@@ -427,6 +437,13 @@
 },
   "sequence": {
     "order": "fixed",
+    "skip": [
+          {
+            "check": "block",
+            "condition": "numIncorrect",
+            "value": 2,
+            "to": "end"
+          }],
     "components": [
       "ConsentPage",
       "IntroPage",
@@ -435,20 +452,11 @@
         "order": "random",
         "components": [
           "trial1", "trial2", "trial3", "trial4",
-          "myAttentionCheckComponent",
+          "attentionCheck1",
           "trial5", "trial6", "trial7", "trial8", "trial9", "trial10", "trial11",
-          "myAttentionCheckComponent",
+          "attentionCheck2",
           "trial12", "trial13", "trial14", "trial15", "trial16", "trial17", "trial18", "trial19", "trial20", "trial21", "trial22", "trial23", "trial24",
           "trial25", "trial26", "trial27"
-        ],
-        "skip": [
-          {
-            "name": "myAttentionCheckComponent",
-            "check": "repeatedComponent",
-            "condition": "numIncorrect",
-            "value": 2,
-            "to": "end"
-          }
         ]
       },
       "BlindSpotQuestionnaire",
