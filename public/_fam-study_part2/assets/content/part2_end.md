@@ -37,7 +37,7 @@ Everything else in the original consent form still holds:
 
 ## Withdrawing your data
 
-Now that you know the true purpose, you have the right to withdraw your data. To have it permanently deleted, contact us at [email] before you leave this page.
+Now that you know the true purpose, you have the right to withdraw your data. To have it permanently deleted, contact us at [pierre.dragicevic@inria.fr](mailto:pierre.dragicevic@inria.fr) before you leave this page.
 
 ---
 
