@@ -59,6 +59,7 @@
     },
     "overclaiming-question-template": {
       "type": "questionnaire",
+      "trainingAttempts": -1,
       "instruction": "Answer spontaneously, based on what you already know.",
       "nextButtonLocation": "aboveStimulus",
       "response": []
@@ -67,6 +68,7 @@
   "components": {
     "attentionCheckOCT": {
       "type": "questionnaire",
+      "trainingAttempts": -1,
       "nextButtonLocation": "belowStimulus",
       "response": [
         {
@@ -81,6 +83,7 @@
     },
     "attentionCheckVideo": {
       "type": "questionnaire",
+      "trainingAttempts": -1,
       "nextButtonLocation": "belowStimulus",
       "response": [
         {
@@ -96,6 +99,7 @@
     "SelfAssessment": {
       "type": "questionnaire",
       "instruction": "Please answer the following two questions of self-assessment.",
+      "trainingAttempts": -1,
       "response": [
         {
           "id": "SelfAssessIntro",
@@ -127,6 +131,7 @@
     "IntroGlobal": {
       "type": "markdown",
       "path": "_fam-study_part1/assets/content/part1_instructions_global.md",
+      "trainingAttempts": -1,
       "nextButtonText": "Start",
       "response": [
         {
@@ -1144,6 +1149,7 @@
     },
     "Doubt": {
       "type": "questionnaire",
+      "trainingAttempts": -1,
       "response": [
         {
           "id": "doubtQ1",
@@ -1163,6 +1169,7 @@
     },
     "PostQuestionnaire": {
       "type": "questionnaire",
+      "trainingAttempts": -1,
       "response": [
         {
           "id": "q1",
