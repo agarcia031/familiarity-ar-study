@@ -357,6 +357,31 @@
             });
         }
     };
+
+        document.addEventListener('keydown', (e) => {
+        if (e.key !== 'Enter') return;
+        e.preventDefault();
+
+        const isVisible = (id) => !document.getElementById(id).classList.contains('hidden');
+
+        if (isVisible('step1')) {
+                goToSourceQuestion();
+            } else if (isVisible('stepSource')) {
+                if (document.querySelector('input[name="sourceOption"]:checked')) {
+                    showCorrection();
+                }
+            } else if (isVisible('correction')) {
+                // Dernier écran : clique le bouton "Next" de reVISit dans la page parente
+                try {
+                    const parentDoc = window.parent.document;
+                    const nextBtn = [...parentDoc.querySelectorAll('button')]
+                        .find(b => b.textContent.trim().toLowerCase() === 'next' && !b.disabled);
+                    if (nextBtn) nextBtn.click();
+                } catch (err) {
+                    console.warn('Impossible d’atteindre le bouton Next de reVISit :', err);
+                }
+            }
+        });
 </script>
 </body>
 </html>
