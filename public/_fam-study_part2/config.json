@@ -70,6 +70,7 @@
   "components": {
     "attentionCheck1": {
       "type": "questionnaire",
+      "trainingAttempts": -1,
       "nextButtonLocation": "belowStimulus",
       "instruction": "Attention check",
       "instructionLocation": "sidebar",
@@ -86,6 +87,7 @@
     },
     "attentionCheck2": {
       "type": "questionnaire",
+      "trainingAttempts": -1,
       "nextButtonLocation": "belowStimulus",
       "instruction": "Attention check",
       "instructionLocation": "sidebar",
@@ -127,6 +129,7 @@
     },
     "MetaAssessment": {
       "type": "questionnaire",
+      "trainingAttempts": -1,
       "instruction": "These two questions ask for your best guess. A rough ballpark is exactly what we're looking for — it's completely normal not to know for sure, so just go with your overall impression.",
       "instructionLocation": "sidebar",
       "response": [
@@ -138,7 +141,6 @@
           "type": "slider",
           "snap": false,
           "step": 1,
-          "startingValue": 9,
           "options": [
             { "label": "0", "value": 0 },
             { "label": "9", "value": 9 },
@@ -151,7 +153,6 @@
           "required": true,
           "location": "belowStimulus",
           "type": "slider",
-          "startingValue": 50,
           "options": [
             { "label": "0%", "value": 0 },
             { "label": "25%", "value": 25 },
@@ -417,6 +418,7 @@
     
     "PostQuestionnaire": {
       "type": "questionnaire",
+      "trainingAttempts": -1,
       "instruction": "One last question before the end. This one is optional in spirit — anything you tell us helps.",
       "instructionLocation": "sidebar",
       "response": [
