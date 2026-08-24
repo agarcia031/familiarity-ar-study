@@ -64,7 +64,9 @@ export class FirebaseStorageEngine extends CloudStorageEngine {
 
     const firebaseConfig = hjsonParse(import.meta.env.VITE_FIREBASE_CONFIG);
     const firebaseApp = initializeApp(firebaseConfig);
-    this.firestore = initializeFirestore(firebaseApp, {});
+    this.firestore = initializeFirestore(firebaseApp, {
+      experimentalAutoDetectLongPolling: true,
+    });
     this.studyCollection = collection(
       this.firestore,
       '_revisit',
