@@ -1,0 +1,41 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.4.2/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Compensation Study",
+    "version": "1",
+    "authors": [
+      "Amandine"
+    ],
+    "date": "2026-08-25",
+    "description": "Only for one participant",
+    "organizations": [
+      "inria"
+    ]
+  },
+  "uiConfig": {
+    "contactEmail": "amgarcia@inria.fr",
+    "helpTextPath": "_factice_study/assets/content/help.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "withSidebar": true,
+    "nextOnEnter": true,
+    "enumerateQuestions": false,
+    "studyEndMsg": "Thank you for completing the study. You may click this link and return to Prolific: [https://app.prolific.com/submissions/complete?cc=CT65J58P](https://app.prolific.com/submissions/complete?cc=CT65J58P)",
+    "urlParticipantIdParam": "PROLIFIC_PID"
+  },
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "_factice_study/assets/content/intro.md",
+      "nextButtonText": "Next",
+      "response": []
+    }
+  },
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "introduction"
+    ]
+  }
+}
